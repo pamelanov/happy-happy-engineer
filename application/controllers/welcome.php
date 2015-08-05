@@ -19,6 +19,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['base_url'] = 'http://localhost/happy-happy-engineer';
+		$this->load->vars($data);
 		$this->load->view('welcome_message');
 	}
 }
