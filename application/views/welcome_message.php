@@ -44,7 +44,9 @@
 </div>
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 	
-</div>
+	<html>
+
+<img src="http://localhost/happy-happy-engineer/uploads/ukulele_chords.png">
 
 </body>
 </html>
