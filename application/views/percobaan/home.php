@@ -1,8 +1,8 @@
 <html>
 	<head>
 		
-		<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-		<script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+		<link href="js-image-slider.css" rel="stylesheet" type="text/css" />
+		<script src="js-image-slider.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="home.css">
 		<title>Home - Happy-Happy Engineering</title>
 	<head>
@@ -24,6 +24,7 @@
 					<img src="images/image-slider-3.jpg" alt="Pure Javascript. No jQuery. No flash." />
 					<img src="images/image-slider-4.jpg" alt="#htmlcaption" />
 					<img src="images/image-slider-5.jpg" />
+					<?php echo $base_url; ?>
 				</div>
 			<div id="htmlcaption" style="display: none;">
 				<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.

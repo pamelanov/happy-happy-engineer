@@ -6,7 +6,7 @@
 	<body>
 
 		<div id="hihi">
-			<img src="hoho.jpg">
+			
 			<div id="tulisan">
 				<h2><span>Happy-Happy Engineer</span></h2>
 			</div>

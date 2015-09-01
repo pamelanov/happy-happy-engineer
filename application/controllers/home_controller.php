@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Home_controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,9 +19,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['base_url'] = 'http://localhost/happy-happy-engineer';
-		$this->load->vars($data);
-		$this->load->view('welcome_message');
+	
+	    $data['judul'] = "Happy Happy Engineer";
+        $data['main'] = "home";     
+		$this->load->view('template', $data);
 	}
 }
 
