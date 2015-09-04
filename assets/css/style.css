@@ -15,15 +15,30 @@ body{
 
 .container-fluid{
       background-color:#FFFFFF;
+    
 
 }
 
+.navbar-fixed-top{
+      opacity: 0.95;
+}
+
+#navbar_brand{
+ font-family: fantasy;   
+}
 #menubar{
       color: white;
 }
 
 #navbarText{
-      /*color: white;*/
+      font-size: medium;
+}
+#navbarText:hover{
+      font-size: medium;
+      color:white;
+      background: black;
+      
+
 }
 
 #brand_logo{
