@@ -20,29 +20,8 @@ class Home_controller extends CI_Controller {
 	public function index()
 	{
 	
-	    $data['judul'] = "Happy Happy Engineer";
-        $data['main'] = "home";     
-		$this->load->view('template', $data);
-	}
-	public function about_us()
-	{
-	
 	    $data['judul'] = "About Us";
         $data['main'] = "about_us";     
-		$this->load->view('template', $data);
-	}
-	public function men()
-	{
-	
-	    $data['judul'] = "Men Collection";
-        $data['main'] = "men_collection";     
-		$this->load->view('template', $data);
-	}
-	public function womens()
-	{
-	
-	    $data['judul'] = "Womens Collection";
-        $data['main'] = "womens_collection";     
 		$this->load->view('template', $data);
 	}
 }

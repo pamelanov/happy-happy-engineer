@@ -50,12 +50,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li id="navbarText"><a href="#" id="navbarText">About</a></li>
+        <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/about_us" id="navbarText">About</a></li>
         <li class="dropdown" id="navbarText">
           <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div id="navbarText">Collections <span class="caret"></span></div></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Boys</a></li>
-            <li><a href="#">Girls</a></li>
+            <li><a href="<?php echo base_url();?>index.php/home_controller/mens">Boys</a></li>
+            <li><a href="<?php echo base_url();?>index.php/home_controller/womens">Girls</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">All Collections</a></li>
           </ul>
