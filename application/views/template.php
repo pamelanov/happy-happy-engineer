@@ -17,27 +17,12 @@
     
     <body>
 
- <div id="menubar" class="centered">
-	<!--<nav class="navbar navbar-default">-->
-	<!--	 <div class="container-fluid">-->
-	<!--		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-	<!--			<ul class="nav navbar-nav">-->
-	<!--				<li>-->
-	<!--					 <a class="navbar-brand" href="#">Happy Happy Engineer-->
-	<!--					 <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">-->
-	<!--					 </a>-->
-	<!--				</li>-->
-	<!--			</ul>-->
-	<!--		 </div>-->
-	<!--	 </div>-->
-	<!--</nav>-->
+ <div class="centered">
 	
-
-	
-   <center> <img src="<?php echo base_url();?>pictures/brand_logo_cropped_resized.jpg" alt="logo"></center>
+   <center> <img src="<?php echo base_url();?>pictures/brand_logo_cropped_resized.jpg" alt="logo" id="logoBrand"></center>
 
 	 
-
+ </div>
 
 
 
@@ -96,8 +81,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
- 	
-</div>
+
  
 
         <div id="konten">

@@ -1,5 +1,5 @@
 <div id="homepage">
-  <div class="row" id="pengganti_slideshow">
+  <div class="row">
 
     <a href="#" class="thumbnail">
       <img src="<?php echo base_url();?>pictures/wallpaper_jeans.png" alt="foto_slideshow">
