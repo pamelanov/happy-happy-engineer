@@ -7,15 +7,17 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
+	
     
 	<link href="<?php echo base_url();?>assets/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-     <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />  
+     <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
+	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />  
         
     </head>
     
     <body>
 
- <div id="menubar">
+ <div id="menubar" class="centered">
 	<!--<nav class="navbar navbar-default">-->
 	<!--	 <div class="container-fluid">-->
 	<!--		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
@@ -30,8 +32,16 @@
 	<!--	 </div>-->
 	<!--</nav>-->
 	
+
 	
-<nav class="navbar navbar-default navbar-fixed-top">
+   <center> <img src="<?php echo base_url();?>pictures/brand_logo_cropped_resized.jpg" alt="logo"></center>
+
+	 
+
+
+
+
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -41,9 +51,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	 <a class="navbar-brand" href="#" id="navbar_brand">Happy Happy Engineer
-        <!--<img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">-->
-      </a>
+<!--	 <a class="navbar-brand" href="#" id="navbar_brand">Happy Happy Engineer
+        <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">
+      </a>-->
 	 
     </div>
 
@@ -86,13 +96,25 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
- </div>
+ 	
+</div>
  
 
         <div id="konten">
+			
+		
         
         <?php $this->load->view($main); ?>
-
-        </div>
+		
+		
+		
+		</div>
+		
+		 
+		
+		<!--<footer class="w3-container w3-teal">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>-->
 
 </body>

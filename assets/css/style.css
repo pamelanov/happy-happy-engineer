@@ -1,10 +1,11 @@
 body{
-      background-color: #E8E8E8;
+      background-color: #FFFFFF;
 }
 
 #konten{
       margin-top: 50px;
       position: static;
+      
 }
 
 #homepage{
@@ -15,11 +16,18 @@ body{
 
 .container-fluid{
       background-color:#FFFFFF;
+      
     
 
 }
 
+/*#logomenu{
+      position: relative;
+      height: 20%;
+}*/
+
 .navbar-fixed-top{
+      
       opacity: 0.95;
 }
 
@@ -27,7 +35,16 @@ body{
  font-family: fantasy;   
 }
 #menubar{
-      color: white;
+      padding-bottom: 5px;
+     
+      
+}
+
+.centered {
+  position: fixed;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 #navbarText{
