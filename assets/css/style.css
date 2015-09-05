@@ -1,3 +1,72 @@
 body{
-      margin-top: 50px;  
+      background-color: #FFFFFF;
+}
+
+#konten{
+      margin-top: 0px;
+      position: static;
+      
+}
+
+#homepage{
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.container-fluid{
+      background-color:#f1f1f1;
+}
+
+#logoBrand{
+      padding-top: 20px;
+}
+
+/*#logomenu{
+      position: relative;
+      height: 20%;
+}*/
+
+.navbar-fixed-top{
+      
+      opacity: 0.95;
+}
+
+#navbar_brand{
+ font-family: fantasy;   
+}
+  
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.centered {
+  position: static;
+  left: 45%;
+  padding-bottom: 7px;
+  margin-left: -100px;
+}
+
+#navbarText{
+      font-size: medium;
+}
+#navbarText:hover{
+      font-size: medium;
+      color:white;
+      background: black;
+      
+
+}
+
+#brand_logo{
+   width: 5%;
+   padding-right: 20px;
 }

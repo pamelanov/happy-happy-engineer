@@ -1,33 +1,58 @@
-<html>
-	<head>
+<div id="homepage">
+  <div class="row">
+
+    <a href="#" class="thumbnail">
+      <img src="<?php echo base_url();?>pictures/wallpaper_jeans.png" alt="foto_slideshow">
+    </a>
+
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<?php echo base_url();?>pictures/H2E_1488.jpg" alt="girl section">
+      <div class="caption">
+        <h3>Browse Girls Section</h3>
+        <p>Explore our girl collection and get discounts for early buyers!</p>
+        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<?php echo base_url();?>pictures/H2E_6849.jpg" alt="boy section">
+      <div class="caption">
+        <h3>Browse Boys Section</h3>
+        <p>Explore our boys collection and get discounts for early buyers!</p>
+        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+
+      </div>
+    </div>
+  </div>
+	    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<?php echo base_url();?>pictures/H2E_4374.jpg" alt="boy section">
+      <div class="caption">
+        <h3>Browse Boys Section</h3>
+        <p>Explore our boys collection and get discounts for early buyers!</p>
+        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+      </div>
+    </div>
+  </div>
+</div>
 		
-		<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-		<script src="themes/1/js-image-slider.js" type="text/javascript"></script>
-		<link rel="stylesheet" href="home.css">
-		<title>Home - Happy-Happy Engineering</title>
-	<head>
-	<body>
-		<div id="menu">
-			<ul>
-			  <li><a href="default.asp">Home</a></li>
-			  <li><a href="news.asp">News</a></li>
-			  <li><a href="contact.asp">Contact</a></li>
-			  <li><a href="about.asp">About</a></li>
-			</ul>
-		</div>
-		
-		<div id="sliderFrame">
-			<div id="slider">
-				<img src="images/image-slider-1.jpg" />
-					</a>
-					<img src="images/image-slider-2.jpg" alt="" />
-					<img src="images/image-slider-3.jpg" alt="Pure Javascript. No jQuery. No flash." />
-					<img src="images/image-slider-4.jpg" alt="#htmlcaption" />
-					<img src="images/image-slider-5.jpg" />
-				</div>
-			<div id="htmlcaption" style="display: none;">
-				<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
-			</div>
-		</div>
-	</body>
-</html>
+		<!--<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="<?php echo base_url();?>pictures/brand_logo_resized.jpg" alt="picture">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+	Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>-->
+  
+
+</div>
