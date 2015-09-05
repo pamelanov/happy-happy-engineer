@@ -1,10 +1,58 @@
 <div id="homepage">
-  <div class="row">
+ <!-- <div class="row">
 
     <a href="#" class="thumbnail">
       <img src="<?php echo base_url();?>pictures/wallpaper_jeans.png" alt="foto_slideshow">
     </a>
 
+</div>-->
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+   <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <center><img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_01.png" alt="..."></center>
+      <div class="carousel-caption">
+        <h3>Happy Happy Engineer</h3>hmm coba
+      </div>
+    </div>
+    <div class="item">
+      <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_02.png" alt="...">
+      <div class="carousel-caption">
+        lagi deh
+      </div>
+	</div>
+	      <div class="item">
+      <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_03.png" alt="...">
+      <div class="carousel-caption">
+        lagi deh
+      </div>
+		  </div>
+	      <div class="item">
+      <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_04.png" alt="...">
+      <div class="carousel-caption">
+        lagi deh
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <div class="row">

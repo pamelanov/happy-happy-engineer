@@ -8,17 +8,21 @@
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
 	
-    
+      <!-- Compiled and minified CSS -->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
+
+  <!-- Compiled and minified JavaScript --><!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
 	<link href="<?php echo base_url();?>assets/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
      <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
 	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
-	 
-	  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-        
+	 
+	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+        <script>
+			  
+		</script>
     </head>
     
     <body>
@@ -102,9 +106,41 @@
 		
 		 
 		
-		<!--<footer class="w3-container w3-teal">
-  <h5>Footer</h5>
-  <p>Footer information goes here</p>
-</footer>-->
+		<footer class="w3-container w3-dark-grey">
+<div class="row">
+  <div class="col-xs-6 col-md-4">
+	<blockquote id="copyright-atas">
+	<p id="copyright">&copy;Copyright 2015 Happy Happy Engineer </p>
+	<p id="copyright">All Rights Reserved</p>
+	<p id="copyright">Designed by pamelanov & arvinsamuar</p>
+	<!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
+	</blockquote>
+  </div>
+  <div class="col-xs-6 col-md-4">
+	<div class="page-header">
+  <h3>Instagram Feeds</h3>
+</div>
+		<!-- SnapWidget -->
+<!-- SnapWidget -->
+<iframe src="http://snapwidget.com/sc/?u=aGFwcHloYXBweWVuZ2luZWVyfGlufDEyMHwxMHwxfHx5ZXN8MjB8ZmFkZU91dHxvblN0YXJ0fG5vfHllcw==&ve=050915"
+		title="Instagram Widget" class="snapwidget-widget" allowTransparency="true"
+		frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:120px"></iframe>
+	
+  </div>
+  <div class="col-xs-6 col-md-4">
+	<div class="page-header">
+  <h3>Social Medias</h3>
+</div>
+	<p id="social-media">
+		<i id="footer_media_em" class="glyphicon glyphicon-envelope w3-xxxlarge"></i>
+		<i id="footer_media_wa" class="fa fa-whatsapp w3-xxxlarge"></i>
+		<i id="footer_media_fb" class="fa fa-facebook-square w3-xxxlarge"></i>
+		<i id="footer_media_ins" class="fa fa-instagram w3-xxxlarge"></i>
+		<i id="footer_media_tw" class="fa fa-twitter-square w3-xxxlarge"></i>
+		
+	</p>
+  </div>
+</div>
+</footer>
 
 </body>
