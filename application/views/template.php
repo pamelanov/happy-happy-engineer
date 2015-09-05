@@ -11,7 +11,13 @@
     
 	<link href="<?php echo base_url();?>assets/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
      <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
-	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />  
+	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
+	 
+	  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
         
     </head>
     
