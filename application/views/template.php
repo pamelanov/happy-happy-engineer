@@ -54,7 +54,7 @@
         <li class="dropdown" id="navbarText">
           <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div id="navbarText">Collections <span class="caret"></span></div></a>
           <ul class="dropdown-menu">
-            <li><a href="<?php echo base_url();?>index.php/home_controller/mens">Boys</a></li>
+            <li><a href="<?php echo base_url();?>index.php/home_controller/men">Boys</a></li>
             <li><a href="<?php echo base_url();?>index.php/home_controller/womens">Girls</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">All Collections</a></li>
@@ -62,7 +62,7 @@
         </li>
 		<li id="navbarText"><a href="#" id="navbarText">Gallery</a></li>
 		<li id="navbarText"><a href="#" id="navbarText">News</a></li>
-		<li id="navbarText"><a href="#" id="navbarText">Contact Us</a></li>
+		<li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Contact Us</a></li>
       </ul>
 <!--      <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
