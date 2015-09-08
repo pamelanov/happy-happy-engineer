@@ -7,6 +7,8 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/jquery/photo-gallery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	
       <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">
@@ -66,9 +68,9 @@
             <li><a href="#">All Collections</a></li>
           </ul>
         </li>
-		<li id="navbarText"><a href="#" id="navbarText">Gallery</a></li>
+		<li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/gallery" id="navbarText">Gallery</a></li>
 		<li id="navbarText"><a href="#" id="navbarText">News</a></li>
-		<li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Contact Us</a></li>
+		<li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Order!</a></li>
       </ul>
 <!--      <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
@@ -146,3 +148,23 @@
 </footer>
 
 </body>
+
+<script language="text/javascript">
+  function autoResizeDiv()
+  {
+      document.getElementById('contact_us_order').style.height = window.innerHeight +'px';
+  }
+  window.onresize = autoResizeDiv;
+  autoResizeDiv();
+
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

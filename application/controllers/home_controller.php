@@ -52,6 +52,13 @@ class Home_controller extends CI_Controller {
         $data['main'] = "contact_us";     
 		$this->load->view('template', $data);
 	}
+	public function gallery()
+	{
+	
+	    $data['judul'] = "Gallery";
+        $data['main'] = "gallery";     
+		$this->load->view('template', $data);
+	}
 }
 
 /* End of file welcome.php */
