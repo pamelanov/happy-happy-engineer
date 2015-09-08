@@ -17,7 +17,6 @@
      <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
 	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
 
-	 
 	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	
         <script>
@@ -45,7 +44,7 @@
         <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">
       </a>-->
 	 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?php echo base_url(); ?>">
         <img id="logo-header" alt="Brand" src="<?php echo base_url(); ?>pictures/horizontal_logo.png" height="30px">
       </a>
     </div>
@@ -59,9 +58,9 @@
           <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
           <ul class="dropdown-menu">
 
-            <li><a href="<?php echo base_url();?>index.php/home_controller/men">Boys</a></li>
+            <li><a href="<?php echo base_url();?>index.php/men_collection">Boys</a></li>
 			<li role="separator" class="divider"></li>
-            <li><a href="<?php echo base_url();?>index.php/home_controller/womens">Girls</a></li>
+            <li><a href="<?php echo base_url();?>index.php/home_controller/women">Girls</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">All Collections</a></li>
           </ul>
