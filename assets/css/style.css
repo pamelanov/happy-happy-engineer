@@ -79,6 +79,10 @@ body{
    margin-left: 150px;
    margin-right: 10px;
 }
+#contact_us_order img{
+   height: 50px;
+   
+}
 #contact_us_ig{
    position: center;
    margin-top: 80px;
