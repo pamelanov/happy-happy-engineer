@@ -58,14 +58,10 @@
         <li class="dropdown" id="navbarText">
           <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
           <ul class="dropdown-menu">
-<<<<<<< HEAD
+
             <li><a href="<?php echo base_url();?>index.php/home_controller/men">Boys</a></li>
-            <li><a href="<?php echo base_url();?>index.php/home_controller/womens">Girls</a></li>
-=======
-            <li><a href="#">Boys</a></li>
 			<li role="separator" class="divider"></li>
-            <li><a href="#">Girls</a></li>
->>>>>>> Pamela
+            <li><a href="<?php echo base_url();?>index.php/home_controller/womens">Girls</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">All Collections</a></li>
           </ul>
@@ -100,6 +96,7 @@
  
 
         <div id="konten">
+			
 			
 		
         

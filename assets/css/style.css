@@ -2,16 +2,12 @@ body{
       background-color: #f1f1f1;
 }
 
-#konten{
-      margin-top: 0px;
-      position: static;
-      
-}
+
 
 .navbar-brand{
       margin-top: -5px;
 }
-#homepage{
+#konten{
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 80px;
