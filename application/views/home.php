@@ -1,4 +1,4 @@
-<div id="homepage">
+
  <!-- <div class="row">
 
     <a href="#" class="thumbnail">
@@ -106,5 +106,3 @@
   </div>
 </div>-->
   
-
-</div>
