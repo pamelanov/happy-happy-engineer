@@ -20,25 +20,29 @@
     <div class="item active">
       <center><img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_01.png" alt="..."></center>
       <div class="carousel-caption">
-        <h3>Happy Happy Engineer</h3>hmm coba
+        <h3>Happy Happy Engineer</h3>
+		hmm coba
       </div>
     </div>
     <div class="item">
       <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_02.png" alt="...">
       <div class="carousel-caption">
-        lagi deh
+        <h3>Get Your Discounts</h3>
+		Up to 70%
       </div>
 	</div>
 	      <div class="item">
       <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_03.png" alt="...">
       <div class="carousel-caption">
-        lagi deh
+        <h3>Support Your Local Brands</h3>
+		We are proud of Indonesia
       </div>
 		  </div>
 	      <div class="item">
       <img id="image-slide" src="<?php echo base_url();?>pictures/slides/slide_04.png" alt="...">
       <div class="carousel-caption">
-        lagi deh
+          <h3>Follow Our Instagram</h3>
+		Give us a shoutout
       </div>
     </div>
     

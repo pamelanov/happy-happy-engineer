@@ -1,5 +1,5 @@
 body{
-      background-color: #FFFFFF;
+      background-color: #f1f1f1;
 }
 
 #konten{
@@ -8,14 +8,25 @@ body{
       
 }
 
+.navbar-brand{
+      margin-top: -5px;
+}
 #homepage{
       margin-left: 10px;
       margin-right: 10px;
+      margin-top: 80px;
 }
 
 .container-fluid{
-      background-color:#f1f1f1;
+      background-color:#a20101;
 }
+
+#footerwarna{
+      background-color: #a20101;
+      opacity: 0.90;
+      color: #fee1e1;
+}
+
 
 #logoBrand{
       padding-top: 20px;
@@ -27,25 +38,25 @@ body{
 }*/
 
 .navbar-fixed-top{
-      
-      opacity: 0.95;
+      opacity: 0.6;
 }
 
+.navbar-fixed-top:hover{
+      opacity: 0.9;
+}
 #navbar_brand{
  font-family: fantasy;   
 }
-  
 
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-
+#navbarText{
+      color: white;
+      font-size: medium;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+#navbarText:hover{
+      font-size: medium;
+      color:#a20101;
+      background: white;
 }
 
 .centered {
@@ -125,26 +136,9 @@ margin-right:15px;
       font-size: smaller;
 }
 
-#admin-login:hover{
-color: #ff8686;     
-}
 
 #copyright{
      margin-top: -9px;
      
 }
-#navbarText{
-      font-size: medium;
-}
-#navbarText:hover{
-      font-size: medium;
-      color:white;
-      background: black;
-      
 
-}
-
-#brand_logo{
-   width: 5%;
-   padding-right: 20px;
-}

@@ -9,7 +9,7 @@
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
 	
       <!-- Compiled and minified CSS -->
-<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
+ <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript --><!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
@@ -25,18 +25,13 @@
 		</script>
     </head>
     
-    <body>
-
- <div class="centered">
+    
 	
-   <center> <img src="<?php echo base_url();?>pictures/brand_logo_cropped_resized.jpg" alt="logo" id="logoBrand"></center>
+	
+	
+<body>
 
-	 
- </div>
-
-
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -50,16 +45,21 @@
         <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">
       </a>-->
 	 
+      <a class="navbar-brand" href="#">
+        <img id="logo-header" alt="Brand" src="<?php echo base_url(); ?>pictures/horizontal_logo.png" height="30px">
+      </a>
     </div>
 
+
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li id="navbarText"><a href="#" id="navbarText">About</a></li>
         <li class="dropdown" id="navbarText">
-          <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div id="navbarText">Collections <span class="caret"></span></div></a>
+          <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Boys</a></li>
+			<li role="separator" class="divider"></li>
             <li><a href="#">Girls</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">All Collections</a></li>
@@ -106,7 +106,7 @@
 		
 		 
 		
-		<footer class="w3-container w3-dark-grey">
+		<footer class="w3-container" id="footerwarna">
 <div class="row">
   <div class="col-xs-6 col-md-4">
 	<blockquote id="copyright-atas">
@@ -124,7 +124,7 @@
 <!-- SnapWidget -->
 <iframe src="http://snapwidget.com/sc/?u=aGFwcHloYXBweWVuZ2luZWVyfGlufDEyMHwxMHwxfHx5ZXN8MjB8ZmFkZU91dHxvblN0YXJ0fG5vfHllcw==&ve=050915"
 		title="Instagram Widget" class="snapwidget-widget" allowTransparency="true"
-		frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:120px"></iframe>
+		frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:120px"></iframe>
 	
   </div>
   <div class="col-xs-6 col-md-4">
