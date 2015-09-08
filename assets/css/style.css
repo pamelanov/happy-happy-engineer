@@ -1,5 +1,5 @@
 body{
-      background-color: #FFFFFF;
+      background-color: #f1f1f1;
 }
 
 #konten{
@@ -8,14 +8,25 @@ body{
       
 }
 
+.navbar-brand{
+      margin-top: -5px;
+}
 #homepage{
       margin-left: 10px;
       margin-right: 10px;
+      margin-top: 80px;
 }
 
 .container-fluid{
-      background-color:#f1f1f1;
+      background-color:#a20101;
 }
+
+#footerwarna{
+      background-color: #a20101;
+      opacity: 0.90;
+      color: #fee1e1;
+}
+
 
 #logoBrand{
       padding-top: 20px;
@@ -27,25 +38,25 @@ body{
 }*/
 
 .navbar-fixed-top{
-      
-      opacity: 0.95;
+      opacity: 0.6;
 }
 
+.navbar-fixed-top:hover{
+      opacity: 0.9;
+}
 #navbar_brand{
  font-family: fantasy;   
 }
-  
 
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-
+#navbarText{
+      color: white;
+      font-size: medium;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+#navbarText:hover{
+      font-size: medium;
+      color:#a20101;
+      background: white;
 }
 
 .centered {
@@ -55,21 +66,32 @@ body{
   margin-left: -100px;
 }
 
-#navbarText{
-      font-size: medium;
-}
-#navbarText:hover{
-      font-size: medium;
-      color:white;
-      background: black;
-      
-
+#footer_media_fb{
+font-size: 40px;
+padding-top: 10px;
+margin-right:15px; 
 }
 
-#brand_logo{
-   width: 5%;
-   padding-right: 20px;
+#footer_media_fb:hover{
+      color: #7f9acf;
 }
+
+#footer_media_ins{
+font-size: 40px;
+padding-top: 10px;
+margin-right:15px; 
+}
+
+#footer_media_ins:hover{
+      color: #e2d7cc;
+}
+
+#footer_media_wa{
+font-size: 40px;
+padding-top: 10px;
+margin-right:15px; 
+}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -123,3 +145,56 @@ body{
    margin-right: 10px;
 }
 >>>>>>> Arvins
+=======
+#footer_media_wa:hover{
+      color: #6fab67;
+}
+
+#footer_media_tw{
+font-size: 40px;
+padding-top: 10px;
+margin-right:15px; 
+}
+#footer_media_tw:hover{
+      color: #65aef9;
+}
+
+#footer_media_em{
+font-size: 40px;
+padding-top: 10px;
+margin-right:15px; 
+}
+#footer_media_em:hover{
+      color: #fcf8ce;
+}
+
+#image-slide{
+      width: 100%;
+}
+#carousel-example-generic{
+      margin-bottom: 20px;
+}
+.page-header{
+      margin-top: 0px;
+}
+
+#social-media{
+      margin-top: 40px;
+      margin-left: 13%;
+}
+#copyright-atas{
+      margin-top: 30%;
+      font-size: smaller;
+      
+}
+#admin-login{
+      font-size: smaller;
+}
+
+
+#copyright{
+     margin-top: -9px;
+     
+}
+
+>>>>>>> Pamela
