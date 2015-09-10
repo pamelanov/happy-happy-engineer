@@ -7,8 +7,11 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
+      <!-- code slideshow foto gallery -->
     <script src="<?php echo base_url(); ?>assets/jquery/photo-gallery.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
+    
 	
       <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">
@@ -167,4 +170,18 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  $(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });
+        })
 </script>
