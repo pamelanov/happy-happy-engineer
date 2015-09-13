@@ -9,7 +9,7 @@
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
 	
       <!-- Compiled and minified CSS -->
- <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">
+<!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">-->
 
   <!-- Compiled and minified JavaScript --><!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
@@ -18,6 +18,8 @@
 	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
 
 	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Josefin+Sans|Dosis' rel='stylesheet' type='text/css'>
 	
         <script>
 			  
@@ -58,11 +60,11 @@
           <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
           <ul class="dropdown-menu">
 
-            <li><a href="<?php echo base_url();?>index.php/men_collection">Boys</a></li>
+            <li><a href="<?php echo base_url();?>index.php/men_collection">Men</a></li>
 			<li role="separator" class="divider"></li>
-            <li><a href="<?php echo base_url();?>index.php/home_controller/women">Girls</a></li>
+            <li><a href="<?php echo base_url();?>index.php/women_collection">Women</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">All Collections</a></li>
+            <li><a href="<?php echo base_url();?>index.php/all_collections">All Collections</a></li>
           </ul>
         </li>
 		<li id="navbarText"><a href="#" id="navbarText">Gallery</a></li>

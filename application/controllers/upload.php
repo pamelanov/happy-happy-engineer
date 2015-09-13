@@ -10,7 +10,12 @@ class Upload extends CI_Controller {
 
 	function index()
 	{
-		$this->load->view('upload_form', array('error' => ' ' ));
+		
+		 $data['judul'] = "Contact Us";
+        $data['main'] = "percobaan/upload_form";
+		$data['error'] = ' ';
+		$this->load->view('template', $data);
+
 	}
 
 	function do_upload()
@@ -33,7 +38,7 @@ class Upload extends CI_Controller {
 		{
 			$data = array('upload_data' => $this->upload->data());
 
-			$this->load->view('upload_success', $data);
+			$this->load->view('percobaan/upload_success', $data);
 		}
 	}
 }

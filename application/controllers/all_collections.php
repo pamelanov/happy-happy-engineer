@@ -1,6 +1,6 @@
 <?php if(!defined('BASEPATH')) exit ('No direct script access allowed');
 
- class Men_collection extends CI_Controller {
+ class All_collections extends CI_Controller {
  
  
   public function __Construct(){
@@ -51,8 +51,8 @@
    $data['offset'] = $offset;
 
    $data['data'] = $this->model_produk->view($config['per_page'], $offset);
-$data['judul'] = "Men Collection";
-    $data['main'] = "men_collection_view";     
+$data['judul'] = "All Collection";
+    $data['main'] = "all_collection_view";     
 		$this->load->view('template', $data);
 
    /*memanggil view pagination*/
