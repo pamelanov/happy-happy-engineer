@@ -21,27 +21,27 @@
   
    $jml = $this->db->get('Produk');
    
-   $config['base_url'] = base_url().'index.php/paging/view';
+   $config['base_url'] = base_url().'index.php/men_collection/view';
    
    $config['total_rows'] = $jml->num_rows();
-   $config['per_page'] = 2; /*Jumlah data yang dipanggil perhalaman*/ 
+   $config['per_page'] = 3; /*Jumlah data yang dipanggil perhalaman*/ 
    $config['uri_segment'] = 3; /*data selanjutnya di parse diurisegmen 3*/
    
    /*Class bootstrap pagination yang digunakan*/
    
-   $config['full_tag_open'] = "<center><ul id='pagination' class='pagination pagination-sm' style='position:relative; top:-25px;'>";
+   $config['full_tag_open'] = "<center><ul id='hitam' class='pagination pagination-sm' style='position:relative; top:-25px;'>";
       $config['full_tag_close'] ="</ul></center>";
-   $config['num_tag_open'] = '<li id="li-pagination-num">';
+   $config['num_tag_open'] = '<li id="biru">';
    $config['num_tag_close'] = '</li>';
-   $config['cur_tag_open'] = "<li class='disabled'><li id='li-pagination' class='active'><a id ='li-pagination' href='#'>";
+   $config['cur_tag_open'] = "<li class='disabled'><li class='active'><a id ='li-pagination' href='#'>";
    $config['cur_tag_close'] = "<span class='sr-only'></span></a></li>";
-   $config['next_tag_open'] = "<li id='li-arrow-pagination'>";
+   $config['next_tag_open'] = "<li id='hijau'>";
    $config['next_tagl_close'] = "</li>";
-   $config['prev_tag_open'] = "<li id='li-arrow-pagination'>";
+   $config['prev_tag_open'] = "<li id='kuning'>";
    $config['prev_tagl_close'] = "</li>";
-   $config['first_tag_open'] = "<li>";
+   $config['first_tag_open'] = "<li id='abu'>";
    $config['first_tagl_close'] = "</li>";
-   $config['last_tag_open'] = "<li>";
+   $config['last_tag_open'] = "<li id='cokelat'>";
    $config['last_tagl_close'] = "</li>";
   
    $this->pagination->initialize($config);

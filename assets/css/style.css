@@ -7,8 +7,30 @@ body{
      border: hidden;
   
 }
+#hitam{
+      background-color: black;
 
+}
 
+#biru{
+      background-color: blue;
+}
+
+#hijau{
+      background-color: green;
+}
+
+#kuning{
+      background-color: yellow;
+}
+
+#abu{
+      background-color: grey;
+}
+
+#cokelat{
+      background-color: brown;
+}
 
 .navbar-brand{
       margin-top: -5px;
