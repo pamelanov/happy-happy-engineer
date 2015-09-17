@@ -2,16 +2,20 @@
 <html lang ="en">
     <head>
          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
 	<title><?php echo $judul;?></title>
+  <!--javascript-->
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
       <!-- code slideshow foto gallery -->
     <script src="<?php echo base_url(); ?>assets/jquery/photo-gallery.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.js"></script>
     
+  <!--javascript end-->  
 	
       <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">
@@ -19,8 +23,8 @@
   <!-- Compiled and minified JavaScript --><!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
 	<link href="<?php echo base_url();?>assets/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-     <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
-	 <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
 
 	 
 	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -171,17 +175,5 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-  $(document).ready(function(){
-           $('li img').on('click',function(){
-                var src = $(this).attr('src');
-                var img = '<img src="' + src + '" class="img-responsive"/>';
-                $('#myModal').modal();
-                $('#myModal').on('shown.bs.modal', function(){
-                    $('#myModal .modal-body').html(img);
-                });
-                $('#myModal').on('hidden.bs.modal', function(){
-                    $('#myModal .modal-body').html('');
-                });
-           });
-        })
+  
 </script>

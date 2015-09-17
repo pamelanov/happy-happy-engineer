@@ -1,3 +1,4 @@
+
 <div class="w3-container w3-teal">
 <h1>Summer Collection 2015</h1>
 </div>
@@ -58,15 +59,10 @@
 		</div>
 	</div>
 </div> -->
-<!-- <div class="modal fade" id="my<a href="http://www.jqueryscript.net/tags.php?/Modal/">Modal</a>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	    <div class="modal-content">
-	      	<div class="modal-body"> 
-	      	</div>
-		</div>
-	</div>
-</div> -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+<!-- <div class="modal fade" id="my<a href="http://www.jqueryscript.net/tags.php?/Modal/">Modal</a>" tabindex="-1" role="dialog" aria-labelledby="modal-contentLabel" aria-hidden="true">
+	-->
+<div class="modal fade" id="modal-content" tabindex="-1" role="dialog" aria-labelledby="modal-contentLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
@@ -74,42 +70,30 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-<ul class="row">
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-287182-blah-blah-blah-yellow-road-sign-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-460760-colors-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-461673-retro-party-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-514834-touchscreen-technology-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-916206-legal-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-1062948-nature-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-1471528-insant-camera-kid-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-2255072-relaxed-man-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-2360379-colors-xs.jpg">
-    </li>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img class="img-responsive" src="images/photodune-2360571-jump-xs.jpg">
-    </li>
-</div>
-
+<div class="container">
+  <ul class="row">
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+      </li>
+      
+    </ul>
+  </div>
+</div> <!-- container -->  
 
 
 <style>

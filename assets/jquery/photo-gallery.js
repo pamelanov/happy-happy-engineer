@@ -1,5 +1,5 @@
 $(document).ready(function(){        
-	$('li img').on('click',function(){
+	$('li img').on('click',function($modal){
 		var src = $(this).attr('src');
 		var img = '<img src="' + src + '" class="img-responsive"/>';
 		
@@ -14,19 +14,20 @@ $(document).ready(function(){
 		html += '</div>';
 		
 		$('#myModal').modal();
-		$('#myModal').on('shown.bs.modal', function(){
-			$('#myModal .modal-body').html(html);
+		$('#myModal').on('shown.bs.modal', function($modal){
+			$('#myModal.modal-body').html(html);
 			//new code
 			$('a.controls').trigger('click');
 		})
-		$('#myModal').on('hidden.bs.modal', function(){
-			$('#myModal .modal-body').html('');
+		$('#myModal').on('hidden.bs.modal', function($modal){
+			$('#myModal.modal-body').html('');
 		});
 		
 		
 		
 		
    });	
+
 })
         
          
