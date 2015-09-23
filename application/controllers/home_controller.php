@@ -38,7 +38,7 @@ class Home_controller extends CI_Controller {
         $data['main'] = "men_collection";     
 		$this->load->view('template', $data);
 	}
-	public function womens()
+	public function women()
 	{
 	
 	    $data['judul'] = "Womens Collection";

@@ -2,24 +2,100 @@ body{
       background-color: #f1f1f1;
 }
 
+#page-active{
+      background-color: #be0202;
+      border: hidden;
+      
+}
+
+
+#li-pagination{
+     background-color: #be0202;
+     border: hidden;
+  
+}
 
 
 .navbar-brand{
       margin-top: -5px;
 }
+
+
 #konten{
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 80px;
+      margin-left: 3px;
+      margin-right: 3px;
+      margin-top: 50px;
 }
 
+#collection{
+      margin-left: 7px;
+      margin-right: 7px;
+}
+#collection_title{
+      font-family: 'Lobster', cursive;
+      font-size: 48px;
+      letter-spacing: 10px;
+      padding-right: 20px;
+      background-color: #020528;
+      color: white;
+      text-shadow: 4px 4px #9d0101;
+      
+}
+
+#upload-form-title{
+            font-family: 'Lobster', cursive;
+      font-size: 48px;
+}
+
+#form-upload-container{
+
+}
+.navbar{
+      margin-left: 3px;
+      margin-right: 3px;
+}
 .container-fluid{
       background-color:#a20101;
 }
+#men-collection-class{
+      color: #543239;
+      
+}
+#upload-file-input{
+      padding-left: 40%;
+      padding-top: 25px;
+}
 
+.w3-btn{
+      margin-left: 40%;
+}
+
+.w3-label{
+      padding-left: 40%;
+}
+
+#form-upload{
+      width: 80%;
+      margin-top: 65px;
+      margin-bottom: 50px;
+      margin-right: 10%;
+      margin-left: 10%;
+}
+#deskripsi-produk{
+font-family: 'Josefin Sans', sans-serif;
+font-size: large;
+}
+
+#caption-produk{
+      font-family: 'Berkshire Swash', cursive;
+}
+#men-collection-col{
+      background-color: #e2dbdc;
+      color: white;
+      
+}
 #footerwarna{
-      background-color: #a20101;
-      opacity: 0.90;
+      background-color: #be0202;
       color: #fee1e1;
 }
 
@@ -87,16 +163,8 @@ font-size: 40px;
 padding-top: 10px;
 margin-right:15px; 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-#pengganti_slideshow{
-      
-      
-}
 #about_us{
-   position: center;
    margin-top: 80px;
    margin-left: 150px;
    margin-right: 10px; 
@@ -107,13 +175,13 @@ margin-right:15px;
    font-weight: bold;  
 }
 #men_collection{
-   position: center;
    margin-top: 20px;
    margin-left: 50px;
    margin-right: 50px;   
 }
 #men_head img{
-   height: 300px;
+   width: 100%;
+   padding-bottom: 0px;
 }
 #womens_head img{
    height: 300px;
@@ -140,8 +208,7 @@ margin-right:15px;
    margin-left: 150px;
    margin-right: 10px;
 }
->>>>>>> Arvins
-=======
+
 #footer_media_wa:hover{
       color: #6fab67;
 }
@@ -193,4 +260,4 @@ margin-right:15px;
      
 }
 
->>>>>>> Pamela
+

@@ -10,11 +10,24 @@ class Upload extends CI_Controller {
 
 	function index()
 	{
-		$this->load->view('upload_form', array('error' => ' ' ));
+		
+		 $data['judul'] = "Contact Us";
+        $data['main'] = "percobaan/upload_form";
+		$data['error'] = ' ';
+		$this->load->view('template', $data);
+
 	}
 
 	function do_upload()
 	{
+		$data = array(
+'productname' => $this->input->post('productname'),
+'productcode' => $this->input->post('productcode'),
+'price' => $this->input->post('price'),
+'sizes' => $this->input->post('sizes'),
+'description' => $this->input->post('description')
+);
+		
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '1000';
@@ -33,7 +46,7 @@ class Upload extends CI_Controller {
 		{
 			$data = array('upload_data' => $this->upload->data());
 
-			$this->load->view('upload_success', $data);
+			$this->load->view('percobaan/upload_success', $data);
 		}
 	}
 }
