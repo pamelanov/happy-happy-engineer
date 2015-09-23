@@ -118,6 +118,8 @@
 	<p id="copyright">Designed by pamelanov & arvinsamuar</p>
 	<!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
 	</blockquote>
+	
+		<p><a href="<?php echo base_url(); ?>index.php/login">Admin Login</a></p>
   </div>
   <div class="col-xs-6 col-md-4">
 	<div class="page-header">
