@@ -1,7 +1,8 @@
 $(document).ready(function(){        
 	$('li img').on('click',function(){
+		
 		var src = $(this).attr('src');
-		var img = '<img src="'+' "<?php echo base_url();?>" ' + src + '" class="img-responsive"/>';
+		var img = '<img src=" ' + src + '" class="img-responsive"/>';
 		
 		//start of new code new code
 		var index = $(this).parent('li').index();   
