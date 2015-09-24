@@ -1,7 +1,7 @@
 $(document).ready(function(){        
-	$('li img').on('click',function($modal){
+	$('li img').on('click',function(){
 		var src = $(this).attr('src');
-		var img = '<img src="' + src + '" class="img-responsive"/>';
+		var img = '<img src="'+' "<?php echo base_url();?>" ' + src + '" class="img-responsive"/>';
 		
 		//start of new code new code
 		var index = $(this).parent('li').index();   
@@ -13,13 +13,14 @@ $(document).ready(function(){
 		html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
 		html += '</div>';
 		
+
 		$('#myModal').modal();
-		$('#myModal').on('shown.bs.modal', function($modal){
+		$('#myModal').on('shown.bs.modal', function(){
 			$('#myModal.modal-body').html(html);
 			//new code
 			$('a.controls').trigger('click');
 		})
-		$('#myModal').on('hidden.bs.modal', function($modal){
+		$('#myModal').on('hidden.bs.modal', function(){
 			$('#myModal.modal-body').html('');
 		});
 		
