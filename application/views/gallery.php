@@ -62,7 +62,7 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-contentLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body"> <?php echo "aaa" ?>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -71,16 +71,17 @@
 <div class="container">
   <ul class="row">
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+
+          <img class="img-responsive" src="http://localhost:8080/happy-happy-engineer/pictures/H2E_1488.jpg">
       </li>
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_790.jpg">
       </li>
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_5458.jpg">
       </li>
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_5668.jpg">
       </li>
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
           <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
@@ -92,3 +93,20 @@
     </ul>
   </div>
 </div> <!-- container -->  
+
+<script type="text/javascript">
+  
+   $(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });
+        })
+</script>

@@ -4,13 +4,15 @@
          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         
   <title><?php echo $judul;?></title>
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
+   
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
+     <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.js"></script>
+    
+    
     
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/jquery/photo-gallery.js"></script>
+    
       <!-- code slideshow foto gallery -->
 
   
