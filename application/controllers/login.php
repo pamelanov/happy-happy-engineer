@@ -1,30 +1,37 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Login extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
+/* Author: Jorge Torres
+ * Description: Login controller class
+ */
+class Login extends CI_Controller{
+    
+       
+    public function index($msg = NULL){
+        // Load our view to be displayed
+        // to the user
+        $data['msg'] = $msg;
+        $this->load->view('login_view', $data);
+    }
+    
+    public function process(){
+        // Load the model
+        $this->load->model('administrator_model');
+        // Validate the user can login
+        $result = $this->administrator_model->validate();
+        // Now we verify the result
+        if(! $result){
+            // If user did not validate, then show them login page again
+            $msg = '<font color=red>Invalid username and/or password.</font><br />';
+            $this->index($msg);
+        }else{
+            // If user did validate, 
+            // Send them to members area
+            redirect('home_admin');
+        }        
+    }
+	function logout()
 	{
-	
-	    $data['judul'] = "Admin Login";
-        $data['main'] = "login_view";     
-		$this->load->view('template', $data);
+		$this->session->unset_userdata('logged_in');
+		redirect('login','refresh');
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+?>
