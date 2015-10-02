@@ -19,11 +19,29 @@ class Home_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-	
-	    $data['judul'] = "Happy Happy Engineer";
-        $data['main'] = "home";     
-		$this->load->view('tempelate', $data);
+		// if($this->session->userdata('logged_in')){
+		// 	$session_data = $this->session->userdata('logged_in');
+		// 	$data['username'] = $session_data['username'];
+	 		
+	 		//view
+			$data['judul'] = "Happy Happy Engineer";
+   			$data['main'] = "home";     
+			$this->load->view('template', $data);
+			
+			
+		// }
+		// else
+		// {
+		// 	redirect('auth','refresh');
+		// }
 	}
+	// public function index()
+	// {
+	
+	//     $data['judul'] = "Happy Happy Engineer";
+ //        $data['main'] = "home";     
+	// 	$this->load->view('template', $data);
+	// }
 	public function about_us()
 	{
 	
@@ -57,6 +75,13 @@ class Home_controller extends CI_Controller {
 	
 	    $data['judul'] = "Gallery";
         $data['main'] = "gallery";     
+		$this->load->view('template', $data);
+	}
+	public function news()
+	{
+	
+	    $data['judul'] = "News!";
+        $data['main'] = "news_view";     
 		$this->load->view('template', $data);
 	}
 }

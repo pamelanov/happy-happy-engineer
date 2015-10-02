@@ -19,7 +19,14 @@ class Auth extends CI_Controller {
 	function logout()
 	{
 		$this->session->unset_userdata('logged_in');
+		session_destroy();
 		redirect('auth','refresh');
+		
+		// $sesi_items = array('role' => '');
+  //       $this->session->unset_userdata($sesi_items);
+  //       $this->session->set_flashdata('error', "You've been logged out!");
+  //       redirect('auth','refresh');	
+
 	}
 }
 

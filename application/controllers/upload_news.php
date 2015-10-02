@@ -1,6 +1,6 @@
 <?php
 
-class Upload extends CI_Controller {
+class upload_news extends CI_Controller {
 
 	function __construct()
 	{
@@ -12,8 +12,8 @@ class Upload extends CI_Controller {
 	function index()
 	{
 		
-		 $data['judul'] = "Contact Us";
-        $data['main'] = "percobaan/upload_form";
+		$data['judul'] = "News";
+        $data['main'] = "news_form";
 		$data['error'] = ' ';
 		$this->load->view('template', $data);
 
@@ -22,14 +22,12 @@ class Upload extends CI_Controller {
 	function do_upload()
 	{
 		$data = array(
-		'productname' => $this->input->post('productname'),
-		'productcode' => $this->input->post('productcode'),
-		'price' => $this->input->post('price'),
-		'sizes' => $this->input->post('sizes'),
-		'description' => $this->input->post('description')
+		'judulBerita' => $this->input->post('judulBerita'),
+		'tanggalBerita' => $this->input->post('tanggalBerita'),
+		'isiBerita' => $this->input->post('isiBerita'),
 		);
 		
-		$config['upload_path'] = './uploads/';
+		$config['foto_berita'] = './foto_berita/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '1000';
 		$config['max_width']  = '10000';

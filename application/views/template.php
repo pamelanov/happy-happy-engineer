@@ -1,3 +1,6 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate");
+?>
 <!DOCTYPE html>
 <html lang ="en">
     <head>
@@ -76,7 +79,7 @@
           </ul>
         </li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/gallery" id="navbarText">Gallery</a></li>
-    <li id="navbarText"><a href="#" id="navbarText">News</a></li>
+    <li id="navbarText"><a href="<?php echo base_url();?>index.php/news_controller" id="navbarText">News</a></li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Order!</a></li>
       </ul>
 <!--      <form class="navbar-form navbar-right" role="search">
@@ -102,20 +105,13 @@
   </div><!-- /.container-fluid -->
 </nav>
 
- 
+ <br>
 
-        <div id="konten">
-      
-      
+<div id="konten">
+   <?php $this->load->view($main); ?>
+</div>
     
-        
-        <?php $this->load->view($main); ?>
-    
-    
-    
-    </div>
-    
-     
+<br>
     
 <footer class="w3-container" id="footerwarna">
   <div class="row">
