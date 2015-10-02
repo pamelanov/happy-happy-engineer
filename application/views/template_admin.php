@@ -54,7 +54,7 @@
         <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">
       </a>-->
    
-      <a class="navbar-brand" href="<?php echo base_url(); ?>">
+      <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home/home_admin">
         <img id="logo-header" alt="Brand" src="<?php echo base_url(); ?>pictures/horizontal_logo.png" height="30px">
       </a>
     </div>
@@ -118,6 +118,7 @@
      
     
 <footer class="w3-container" id="footerwarna">
+  <a href="<?php echo site_url('auth/logout'); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
   <div class="row">
     <div class="col-xs-6 col-md-4">
       <blockquote id="copyright-atas">
