@@ -37,7 +37,7 @@ class verifylogin extends CI_Controller {
 				'username' => $result->result_array()[0]);
 			$this->session->set_userdata('logged_in', $sess_array);
 			session_start();
-			redirect('home','refresh');
+			redirect('home_controller','refresh');
 		}
 		else
 		{

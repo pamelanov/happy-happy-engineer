@@ -1,5 +1,5 @@
 <?php
-class upload_model extends CI_Model{
+class news_upload_model extends CI_Model{
 function __construct() {
 parent::__construct();
 }

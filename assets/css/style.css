@@ -275,6 +275,7 @@ margin-right:15px;
 
 
 .media-object{
-   height: 100px;
-   width: 100px;
+   margin-left: 25px;
+   max-height: 300px;
+   max-width: 300px;
 }
