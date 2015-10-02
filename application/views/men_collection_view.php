@@ -5,6 +5,7 @@
 </div>
 <div class="page-header">
 <p id='collection_title' class="text-right">Men Collection</p>
+<p id='new_collection' class="text-right">Add New Collection</p>
 </div>
 <div class="row" id="collection">
   

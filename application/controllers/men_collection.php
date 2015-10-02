@@ -6,7 +6,7 @@
   public function __Construct(){
    parent ::__construct();
    
-   $this->load->model('model_produk');
+   $this->load->model('men_col_model');
   
    /* memanggil atau mengkoneksikan model pagination
      dengan controller pagination */
@@ -50,7 +50,7 @@
    /*membuat variable halaman untuk dipanggil di view nantinya*/
    $data['offset'] = $offset;
 
-   $data['data'] = $this->model_produk->view($config['per_page'], $offset);
+   $data['data'] = $this->men_col_model->view($config['per_page'], $offset);
 $data['judul'] = "Men Collection";
     $data['main'] = "men_collection_view";     
 		$this->load->view('template', $data);

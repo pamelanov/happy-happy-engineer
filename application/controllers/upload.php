@@ -12,22 +12,18 @@ class Upload extends CI_Controller {
 	function index()
 	{
 		
-		 $data['judul'] = "Contact Us";
+		 $data['judul'] = "Upload Form";
         $data['main'] = "percobaan/upload_form";
 		$data['error'] = ' ';
-		$this->load->view('template', $data);
+		$this->load->view('template', $data, array('error' => ' ' ));
 
 	}
+	
 
 	function do_upload()
 	{
-		$data = array(
-'productname' => $this->input->post('productname'),
-'productcode' => $this->input->post('productcode'),
-'price' => $this->input->post('price'),
-'sizes' => $this->input->post('sizes'),
-'description' => $this->input->post('description')
-);
+
+
 		
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
@@ -41,14 +37,34 @@ class Upload extends CI_Controller {
 		{
 			$error = array('error' => $this->upload->display_errors());
 
-			$this->load->view('upload_form', $error);
+			$this->load->view('percobaan/upload_form', $error);
 		}
 		else
+	
 		{
-			$data = array('upload_data' => $this->upload->data());
+			$dataUpload = array();
+			$dataUpload = $this->upload->data();
 
-			$this->load->view('percobaan/upload_success', $data);
+			
+
+			$this->load->view('percobaan/upload_success', $dataUpload);
+			
+				$data = array(
+'Jenis_Produk' => $this->input->post('productname'),
+'ID_Produk' => $this->input->post('productcode'),
+'Harga' => $this->input->post('price'),
+'Size' => $this->input->post('sizes'),
+'Gender' => $this->input->post('gender'),
+'Deskripsi_Produk' => $this->input->post('description'),
+'Upload_Path' => $dataUpload['file_name']
+);
+	
+
+	$this->upload_model->form_insert($data);
 		}
+		
+	
+				
 	}
 }
 ?>
