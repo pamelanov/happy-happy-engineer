@@ -8,8 +8,6 @@
    
    $this->load->model('men_col_model');
   
-   /* memanggil atau mengkoneksikan model pagination
-     dengan controller pagination */
   }
   
   public function index()  {

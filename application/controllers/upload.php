@@ -13,7 +13,7 @@ class Upload extends CI_Controller {
 	{
 		
 		 $data['judul'] = "Upload Form";
-        $data['main'] = "percobaan/upload_form";
+        $data['main'] = "upload_form";
 		$data['error'] = ' ';
 		$this->load->view('template', $data, array('error' => ' ' ));
 
@@ -22,14 +22,12 @@ class Upload extends CI_Controller {
 
 	function do_upload()
 	{
-
-
-		
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']	= '1000';
-		$config['max_width']  = '10000';
-		$config['max_height']  = '10000';
+		$config['image_width']	= '0';
+		$config['image_height']  = '0';
+		$config['max_size']  = '3000';
+		$config['remove_spaces']  = 'true';
 
 		$this->load->library('upload', $config);
 
@@ -44,23 +42,27 @@ class Upload extends CI_Controller {
 		{
 			$dataUpload = array();
 			$dataUpload = $this->upload->data();
-
+			//$this->load->view('upload_success', $dataUpload);
 			
+			// menyimpan isian dari form ke dalam variabel
+			$data = array(
+			'Jenis_Produk' => $this->input->post('productname'),
+			'ID_Produk' => $this->input->post('productcode'),
+			'Harga' => $this->input->post('price'),
+			'Size' => $this->input->post('sizes'),
+			'Gender' => $this->input->post('gender'),
+			'Deskripsi_Produk' => $this->input->post('description'),
+			'Upload_Path' => $dataUpload['file_name']
+			);
 
-			$this->load->view('percobaan/upload_success', $dataUpload);
+			// memasukkan isian form ke dalam database
+			$success = $this->upload_model->form_insert($data);
 			
-				$data = array(
-'Jenis_Produk' => $this->input->post('productname'),
-'ID_Produk' => $this->input->post('productcode'),
-'Harga' => $this->input->post('price'),
-'Size' => $this->input->post('sizes'),
-'Gender' => $this->input->post('gender'),
-'Deskripsi_Produk' => $this->input->post('description'),
-'Upload_Path' => $dataUpload['file_name']
-);
-	
-
-	$this->upload_model->form_insert($data);
+			if ($success) {
+				$data['judul'] = "Upload Success";
+				$data['main'] = "upload_success";
+				$this->load->view('template', $data);
+			 }
 		}
 		
 	

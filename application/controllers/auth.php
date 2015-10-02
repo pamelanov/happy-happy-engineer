@@ -11,9 +11,11 @@ class Auth extends CI_Controller {
 		else
 		{
 			$data['error_message'] = $this->session->userdata('error_message');
+			$data['main'] = 'login_view';
+			$data['judul'] = 'Admin Login';
 			$this->session->unset_userdata('error_message');
 			$this->load->helper(array('form'));
-			$this->load->view('login_view',$data);
+			$this->load->view('template',$data);
 		}
 	}
 	function logout()

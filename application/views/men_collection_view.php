@@ -5,7 +5,10 @@
 </div>
 <div class="page-header">
 <p id='collection_title' class="text-right">Men Collection</p>
-<p id='new_collection' class="text-right">Add New Collection</p>
+
+<?php if($this->session->userdata('logged_in')){ ?>
+<a href="<?php echo base_url(); ?>index.php/upload"><p id='new_collection' class="text-center"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Collection</p></a>
+<?php } ?>
 </div>
 <div class="row" id="collection">
   
