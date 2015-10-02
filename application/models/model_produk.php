@@ -16,6 +16,14 @@
   return $query->result();
   
   }
+  
+  function getItemData($id){
+  
+
+  
+  return $query->result();
+  
+  }
  }
 
 ?>

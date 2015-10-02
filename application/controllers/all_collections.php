@@ -58,6 +58,21 @@ $data['judul'] = "All Collection";
    /*memanggil view pagination*/
   }
   
+  function edit($id){
+   $datas = $this->model_produk->getItemData($id);
+   
+    $data['item_data'] = $datas;
+	$data['judul'] = "Edit Item";
+    $data['main'] = "edit_item";     
+	$this->load->view('template', $data);
+  }
+  
+  function delete($id){
+	$data['judul'] = "Delete Item";
+    $data['main'] = "delete_item";     
+	$this->load->view('template', $data);
+  }
+  
  }
 
 ?>

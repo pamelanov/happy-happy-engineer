@@ -1,7 +1,7 @@
 
 <div class="container" id="login-form">
 
-  <div class="col-lg-4">
+
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Login</h3>
@@ -16,17 +16,11 @@
           <input class="form-control" placeholder="Password" name="password" type="password" ide="password" value="">
         </div>
 
-        <div class="checkbox">
-          <label>
-            <input name="remember" type="checkbox" value="Remember Me">Remember Me
-          </label>
-        </div>
-        
         <button type="Submit" class="btn btn-lg btn-success btn-block" name="Login">Login </button>
         </form>
         <div style="color:red" align="center"><?php if(! is_null($error_message)) echo $error_message;?></div>
       </div>
     </div>
-  </div>
+
 
 </div>

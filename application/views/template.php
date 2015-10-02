@@ -69,7 +69,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
       <ul class="nav navbar-nav">
         <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/about_us" id="navbarText">About</a></li>
         <li class="dropdown" id="navbarText">
-          <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
+          <a href="#" id="navbarText" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections<span class="caret"></span></a>
           <ul class="dropdown-menu">
 
             <li><a href="<?php echo base_url();?>index.php/men_collection">Men</a></li>

@@ -33,9 +33,9 @@ class Upload extends CI_Controller {
 
 		if ( ! $this->upload->do_upload())
 		{
-			$error = array('error' => $this->upload->display_errors());
-
-			$this->load->view('percobaan/upload_form', $error);
+			$data['judul'] = "Upload Failed";
+				$data['main'] = "upload_failed";
+				$this->load->view('template', $data);
 		}
 		else
 	
@@ -61,6 +61,12 @@ class Upload extends CI_Controller {
 			if ($success) {
 				$data['judul'] = "Upload Success";
 				$data['main'] = "upload_success";
+				$this->load->view('template', $data);
+			 }
+			 
+			 else{
+				$data['judul'] = "Upload Failed";
+				$data['main'] = "upload_failed";
 				$this->load->view('template', $data);
 			 }
 		}

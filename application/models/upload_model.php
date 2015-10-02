@@ -7,9 +7,14 @@ parent::__construct();
 
 function form_insert($data){
 
-$this->db->insert('Produk', $data);
+if ($this->db->insert('Produk', $data)){
+    return true;
+}
 
-return true;
+else {
+    return false;
+}
+
 
 }
 
