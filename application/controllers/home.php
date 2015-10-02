@@ -9,7 +9,7 @@ class Home extends CI_Controller {
 	 		
 	 		//view
 			$data['judul'] = "Happy Happy Engineer";
-   			$data['main'] = "home";     
+   			$data['main'] = "home_admin";     
 			$this->load->view('template_admin', $data);
 			
 			
@@ -60,7 +60,7 @@ class Home extends CI_Controller {
 		
 		    
 	}
-	public function women()
+	public function gallery()
 	{
 		if($this->session->userdata('logged_in')){
 			$session_data = $this->session->userdata('logged_in');

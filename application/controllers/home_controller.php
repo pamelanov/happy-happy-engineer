@@ -22,7 +22,7 @@ class Home_controller extends CI_Controller {
 	
 	    $data['judul'] = "Happy Happy Engineer";
         $data['main'] = "home";     
-		$this->load->view('template', $data);
+		$this->load->view('tempelate', $data);
 	}
 	public function about_us()
 	{

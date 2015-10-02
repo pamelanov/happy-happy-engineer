@@ -54,7 +54,7 @@
         <img alt="Brand" id="brand_logo" src="<?php echo base_url();?>pictures/brand_logo.jpg">
       </a>-->
    
-      <a class="navbar-brand" href="<?php echo base_url(); ?>">
+      <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home/home_admin">
         <img id="logo-header" alt="Brand" src="<?php echo base_url(); ?>pictures/horizontal_logo.png" height="30px">
       </a>
     </div>

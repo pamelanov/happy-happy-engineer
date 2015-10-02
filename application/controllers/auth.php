@@ -6,7 +6,7 @@ class Auth extends CI_Controller {
 	{
 		//$data['msg'] = $msg;
 		if($this->session->userdata('logged_in')){
-			redirect('home_admin','refresh');
+			redirect('home','refresh');
 		}
 		else
 		{

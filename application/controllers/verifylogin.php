@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  
-class VerifyLogin extends CI_Controller {
+class verifylogin extends CI_Controller {
 	function index()
 	{
 		//This method will have the credentials validation
@@ -18,7 +18,7 @@ class VerifyLogin extends CI_Controller {
 		else
 		{
 			//Go to private area
-			redirect('home_admin', 'refresh');
+			redirect('home', 'refresh');
 		}
 	}
 
@@ -36,7 +36,7 @@ class VerifyLogin extends CI_Controller {
 			$sess_array = array(
 				'username' => $result->result_array()[0]);
 			$this->session->set_userdata('logged_in', $sess_array);
-			redirect('home_admin','refresh');
+			redirect('home','refresh');
 		}
 		else
 		{
