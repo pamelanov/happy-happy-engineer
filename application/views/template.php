@@ -105,7 +105,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
   </div><!-- /.container-fluid -->
 </nav>
 
- <br>
+
 
 <div id="konten">
    <?php $this->load->view($main); ?>
