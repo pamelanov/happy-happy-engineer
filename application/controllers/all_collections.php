@@ -67,10 +67,17 @@ $data['judul'] = "All Collection";
 	$this->load->view('template', $data);
   }
   
-  function delete($id){
-	$data['judul'] = "Delete Item";
-    $data['main'] = "delete_item";     
-	$this->load->view('template', $data);
+  function delete($url, $id){
+   $datas = $this->model_produk->deleteData($id);
+   if ($datas == true){
+	//$data['status'] = true;
+	redirect($url, 'refresh');
+   }
+   else{
+	//$data['status'] = false;
+	redirect($this->uri->uri_string());
+   }
+
   }
   
  }

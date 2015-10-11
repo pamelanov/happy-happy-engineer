@@ -19,10 +19,16 @@
   
   function getItemData($id){
   
-
+  $query = $this->db->query("Select * from Produk where ID_Produk = '$id'");
   
-  return $query->result();
+  return $query->result_array();
   
+  }
+  
+  function deleteData($id){
+   $query = $this->db->query("DELETE from Produk where ID_Produk ='$id'");
+   
+   return true;
   }
  }
 
