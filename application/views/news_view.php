@@ -5,6 +5,7 @@
 <?php
    $no = $offset;
    foreach($data as $row ) { ?>
+   <br>
 		<div class="media">
 		  <div class="media-left">
 		    <a href="#">
