@@ -1,10 +1,6 @@
 
 <div class="container" id="login-form">
 
-
-<<<<<<< HEAD
-=======
-<div class="container">
 <div class="col-lg-12">
   <div class="col-lg-8">
     <div class="panel-body">
@@ -18,7 +14,7 @@
     <br>
     <br>
     <br>
->>>>>>> Arvins
+
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Login</h3>
