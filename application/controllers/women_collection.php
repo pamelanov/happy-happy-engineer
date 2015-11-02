@@ -21,7 +21,7 @@
   
    $jml = $this->db->get('Produk');
    
-   $config['base_url'] = base_url().'index.php/men_collection/view';
+   $config['base_url'] = base_url().'index.php/women_collection/view';
    
    $config['total_rows'] = $jml->num_rows();
    $config['per_page'] = 6; /*Jumlah data yang dipanggil perhalaman*/ 
