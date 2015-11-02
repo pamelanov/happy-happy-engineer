@@ -300,4 +300,38 @@ margin-right:15px;
      
 }
 
+.media{
+  margin-left: 90px;
+}
+
+.media-object{
+   margin-left: 25px;
+   max-height: 300px;
+   max-width: 300px;
+}
+
+.row {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+.col-xs-6 {     
+    list-style:none;
+    margin-bottom:25px;           
+}
+ul li img {
+    cursor: pointer;
+}
+.modal-dialog{
+   position: center;
+   margin: 70px;
+}
+.modal-body {
+    padding:5px !important;
+}
+.modal-content {
+    border-radius:0;
+    width: 150%;
+    height: 150%;
+}
+
 

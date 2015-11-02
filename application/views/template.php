@@ -1,4 +1,8 @@
+<<<<<<< HEAD
     <?php
+=======
+<?php
+>>>>>>> Arvins
 header("Cache-Control: no-store, no-cache, must-revalidate");
 ?>
 <!DOCTYPE html>
@@ -80,7 +84,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
           </ul>
         </li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/gallery" id="navbarText">Gallery</a></li>
-    <li id="navbarText"><a href="#" id="navbarText">News</a></li>
+    <li id="navbarText"><a href="<?php echo base_url();?>index.php/news_controller" id="navbarText">News</a></li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Order!</a></li>
       </ul>
 <!--      <form class="navbar-form navbar-right" role="search">
@@ -106,14 +110,55 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
   </div><!-- /.container-fluid -->
 </nav>
 
- 
 
+<<<<<<< HEAD
         <div id="konten">
       
       
     
         
         <?php $this->load->view($main); ?>
+=======
+
+<div id="konten">
+   <?php $this->load->view($main); ?>
+</div>
+    
+<br>
+    
+<footer class="w3-container" id="footerwarna">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <blockquote id="copyright-atas">
+      <p id="copyright">&copy;Copyright 2015 Happy Happy Engineer </p>
+      <p id="copyright">All Rights Reserved</p>
+      <p id="copyright">Designed by pamelanov & arvinsamuar</p>
+      <!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
+      </blockquote>
+      
+      <?php if(! $this->session->userdata('logged_in')){        ?>
+          <p><a href="<?php echo base_url(); ?>index.php/login">Admin Login</a></p>
+      <?php } ?>
+      
+
+      <?php if($this->session->userdata('logged_in')){        ?>
+          <a href="<?php echo base_url(); ?>index.php/auth/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+      <?php } ?>
+      <br><br>
+    </div>
+    
+    <div class="col-xs-6 col-md-4">
+      <div class="page-header">
+        <h3>Instagram Feeds</h3>
+      </div>
+        <!-- SnapWidget -->
+        <!-- SnapWidget -->
+      <iframe src="http://snapwidget.com/sc/?u=aGFwcHloYXBweWVuZ2luZWVyfGlufDEyMHwxMHwxfHx5ZXN8MjB8ZmFkZU91dHxvblN0YXJ0fG5vfHllcw==&ve=050915"
+          title="Instagram Widget" class="snapwidget-widget" allowTransparency="true"
+         frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:120px"></iframe>
+      
+    </div>
+>>>>>>> Arvins
 
 		
 		

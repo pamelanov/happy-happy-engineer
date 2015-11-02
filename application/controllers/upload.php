@@ -27,9 +27,19 @@ class Upload extends CI_Controller {
 	function do_upload()
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
+=======
+		$data = array(
+		'productname' => $this->input->post('productname'),
+		'productcode' => $this->input->post('productcode'),
+		'price' => $this->input->post('price'),
+		'sizes' => $this->input->post('sizes'),
+		'description' => $this->input->post('description')
+		);
+>>>>>>> Arvins
 		
 >>>>>>> Pamela
 		$config['upload_path'] = './uploads/';

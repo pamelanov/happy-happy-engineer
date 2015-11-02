@@ -2,6 +2,23 @@
 <div class="container" id="login-form">
 
 
+<<<<<<< HEAD
+=======
+<div class="container">
+<div class="col-lg-12">
+  <div class="col-lg-8">
+    <div class="panel-body">
+      <h1><center>H2E</center></h1>
+      
+      <center><img src="<?php echo base_url()?>index.php/pictures/brand_logo.jpg"; ?>" alt="H2E_Logo" style="height:500px"/></center>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <br>
+    <br>
+    <br>
+    <br>
+>>>>>>> Arvins
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Login</h3>
