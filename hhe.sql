@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2015 at 08:14 AM
+-- Generation Time: Nov 02, 2015 at 11:39 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -47,9 +47,32 @@ INSERT INTO `administrator` (`username`, `password`) VALUES
 
 CREATE TABLE IF NOT EXISTS `news` (
   `ID_News` int(11) NOT NULL,
+  `judul_berita` varchar(500) NOT NULL,
   `Tanggal` date NOT NULL,
-  `Isi` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `isi_berita` varchar(8000) NOT NULL,
+  `foto_berita` varchar(500) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`ID_News`, `judul_berita`, `Tanggal`, `isi_berita`, `foto_berita`) VALUES
+(2, 'dansbdad', '2015-01-01', 'sdfsdfsfsdf', 'IMG_36041.JPG'),
+(3, 'HAHAHA', '2015-01-01', 'Jerman sukses meredam perlawanan sengit Georgia dengan meraih kemenangan tipis 2-1 dalam laga pamungkas kualifikasi Piala Eropa 2016 di Red Bull Arena Lipzig, Senin (12/10) dini hari WIB. Hasil ini cukup bagi pasukan Die Mannschaft untuk lolos ke babak utama turnamen usai menjadi pemuncak Grup D kualifikasi.\r\n\r\nBabak Pertama:\r\n\r\nMembutuhkan kemenangan guna memastikan tempat di babak utama Piala Eropa sekaligus memuncaki persaingan grup, Jerman langsung tampil menggebrak sejak peluit awal pertandingan dibunyikan oleh wasit.\r\n\r\nKans matang bagi Jerman untuk membuka keunggulan datang di menit ke-11, namun tembakan Marco Reus mampu dimentahkan Nukri Revishvili. Semenit kemudian, Reus kembali mampu menembus pertahanan Georgia, hanya saja tembakannya melesat jauh di atas mistar.\r\n\r\nHingga pertengahan babak pertama, selain barisan depan Die Mannschaft yang kurang optimal, ketangguhan Revishvili di bawah mistar juga membuat frustrasi tuan rumah. Serangan balik Georgia harus diwaspadai, Tornike Okriashvili sempat memaksa Manuel Neuer melakukan penyelamatan krusial di menit ke-28.\r\n\r\nPertahanan rapat Georgia hingga penampilan prima Revishvili menjadi penghalang bagi Jerman untuk dapat membuka keunggulan dan hingga paruh pertama permainan berakhir, kedudukan imbang tanpa gol tetap bertahan.\r\n\r\nBabak Kedua:\r\n\r\nLima menit selepas jeda pertandingan, sebuah kesalahan dilakukan Jaba Kankava kala menjatukan Mesut Ozil di kotak penalti. Thomas Muller pun tak melewatkan kesempatan yang ada untuk membuka keunggulan Jerman usai eksekusinya membobol gawang Revishvili.\r\n\r\nMenit ke-53, Kankava menebus kesalahannya dengan mampu menyamakan kedudukan bagi Georgia setelah tembakan voli kaki kirinya dari jarak cukup jauh tak mampu diantisipasi oleh Neuer yang mati langkah dalam mengamankan gawangnya.\r\n\r\nGeorgia memang tak banyak menguasai permainan, namun serangan mereka begitu efektif dan hampir mampu berbalik unggul di menit ke-60 saat Okriashvili yang tak terkawal menyambar bola liar di depan gawang Jerman, akan tetapi sepakannya bisa diselamatkan Neuer.\r\n\r\nKeputusan Joachim Low yang memasukkan Max Kruse dalam 15 menit akhir permainan berbuah hasil ketika penyerang Wolfsburg itu sukes menyarangkan bola ke gawang Georgia di menit ke-79. Usai kembali memimpin, Jerman kian gencar menekan, hanya saja tidka ada tambahan gol tercipya hingga laga berakhir.\r\n\r\nSusunan Pemain:\r\n\r\nJERMAN (4-2-3-1): Neuer; Ginter, Boateng, Hummels, Hector; Kroos, Gundogan; Reus, Ozil, Muller; Schurrle.\r\n\r\nGEROGIA (5-4-1): Revishvili; Lobzhanidze, Kverkvelia, Amisulashvili, Kashia, Navalovski; Qazaishvili, Kankava, Kvekveskiri, Okriashvili; Gelashvili.', 'The_Coboys.jpg'),
+(4, 'DOta', '2015-04-02', '      hahaha hihihi hohoho huhuhu hehehe\r\nhahihuheho huhahiohe hasdbansbdad\r\nasdj;asjdlkjasdlasjd. ajsdkajsd;jasd\r\n\r\n     Ini ada alh contoh paragraf. apakah ketika di post akan menjadi sebuiah paragraf??\r\nha', 'BX6CAaZCUAARyTT.jpg'),
+(5, 'SFHUJUOO', '2015-02-01', 'JLSFL F', 'flag.png'),
+(6, 'hhhhhh', '2015-01-01', 'sssss\r\nsss\r\n\r\nssss', 'jadwal.PNG'),
+(7, 'nnnnnn', '2015-01-01', 'ffff\r\nff\r\n\r\nffffffffff', 'Kelas.PNG'),
+(8, 'pppppp', '2016-04-01', 'lllll\r\nll\r\n\r\nlllllllllll', 'ufo.jpg'),
+(9, 'sssffff', '2015-03-03', 'llllllll\r\nlppp\r\npp\r\n\r\npppppp', 'drogon.gif'),
+(10, 'sssffff', '2015-03-03', 'llllllll\r\nlppp\r\npp\r\n\r\npppppp', 'permen.png'),
+(11, 'ppopopopo', '2015-09-02', 'ffff\r\nhhhh\r\n\r\nhhhjjjjjjjj', 'ufo.png'),
+(12, 'hhhhhhoooooo', '2016-06-12', 'PLPOPJJZXBCHJXCB\r\n\r\nBFLBZBCXZC', 'flag_green.png'),
+(13, 'bbbb', '2016-07-13', 'llllppppooooo\r\n\r\nnjlsblofyshbn', 'permenn.png'),
+(14, 'ccccccccccc', '2015-06-18', '0', 'asssss.jpg'),
+(15, 'jjjjjjjjjjj', '2015-02-09', 'jjjjjjjjjj\r\n*\r\n\r\n*\r\njj\r\n*\r\n\r\n*\r\n', 'Hatori_Mengejar_Cinta.jpg'),
+(16, 'bbbbb', '2015-09-18', 'lllllll\r\n\r\nlllll\r\n\r\nlllll', 'Hatori_Mengejar_Cinta1.jpg');
 
 -- --------------------------------------------------------
 
@@ -104,7 +127,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `ID_News` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_News` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
