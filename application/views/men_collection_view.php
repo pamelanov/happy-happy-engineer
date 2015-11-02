@@ -5,7 +5,7 @@
 </div>
 
 <div class="page-header">
-<<<<<<< HEAD
+
 
 <p id='collection_title' class="text-right">Men Collection</p>
 
@@ -14,9 +14,6 @@
 <a href="<?php echo base_url(); ?>index.php/upload"><p id='new_collection' class="text-center"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Collection</p></a>
 <?php } ?>
 
-=======
-  <p id='collection_title' class="text-right">Men Collection</p>
->>>>>>> refs/remotes/origin/Arvins
 </div>
 
 <div class="row" id="collection">
@@ -35,7 +32,7 @@
           <h6 id="caption-produk" class="text-center">Product Code: <?php echo $row->ID_Produk; ?></h4>
           <p id="deskripsi-produk"><?php echo $row->Deskripsi_Produk; ?></p>
           <p class="text-right"><b>Price: Rp<?php echo number_format($row->Harga); ?></b></p>
-<<<<<<< HEAD
+
           <p class="text-right">Available Sizes: <?php echo $row->Size; ?></p>
 <?php if($this->session->userdata('logged_in')){
   echo anchor('all_collections/edit/'.$url.'/'.$row->ID_Produk, '<button type="submit" class="btn btn-primary">
@@ -48,10 +45,6 @@ echo anchor('all_collections/delete/'.$row->ID_Produk, '<button type="submit" cl
 
 } ?>
           
-
-=======
-          <p class="text-right">Available Sizes: <?php echo $row->Size; ?></p> 
->>>>>>> refs/remotes/origin/Arvins
         </div>
       </div>
     </div>
