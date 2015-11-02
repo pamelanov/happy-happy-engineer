@@ -1,8 +1,7 @@
 <?php
-
 header("Cache-Control: no-store, no-cache, must-revalidate");
-
 ?>
+
 <!DOCTYPE html>
 <html lang ="en">
 
@@ -109,6 +108,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
 </nav>
 
 
+
 <div id="konten">
    <?php $this->load->view($main); ?>
 </div>
@@ -116,35 +116,41 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
 <br>
     
 
-		 
-		
-		<footer class="w3-container" id="footerwarna">
-<div class="row">
-  <div class="col-xs-6 col-md-4">
-	<blockquote id="copyright-atas">
-	<p id="copyright">&copy;Copyright 2015 Happy Happy Engineer </p>
-	<p id="copyright">All Rights Reserved</p>
-	<p id="copyright">Designed by pamelanov & arvinsamuar</p>
-	<!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
-	</blockquote>
+<footer class="w3-container" id="footerwarna">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <blockquote id="copyright-atas">
+      <p id="copyright">&copy;Copyright 2015 Happy Happy Engineer </p>
+      <p id="copyright">All Rights Reserved</p>
+      <p id="copyright">Designed by pamelanov & arvinsamuar</p>
+      <!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
+      </blockquote>
+      
+      <?php if(! $this->session->userdata('logged_in')){        ?>
+          <p><a href="<?php echo base_url(); ?>index.php/auth">Admin Login</a></p>
+      <?php } ?>
+      
 
-		<p><a href="<?php echo base_url(); ?>index.php/auth">Admin Login</a></p>
-		<?php if($this->session->userdata('logged_in')){ ?>
-        <a href="<?php echo base_url()?>index.php/auth/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-		<?php } ?>
+      <?php if($this->session->userdata('logged_in')){        ?>
+          <a href="<?php echo base_url(); ?>index.php/auth/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+      <?php } ?>
+      <br><br>
+    </div>
+    
+    <div class="col-xs-6 col-md-4">
+      <div class="page-header">
+        <h3>Instagram Feeds</h3>
+      </div>
+        <!-- SnapWidget -->
+        <!-- SnapWidget -->
+      <iframe src="http://snapwidget.com/sc/?u=aGFwcHloYXBweWVuZ2luZWVyfGlufDEyMHwxMHwxfHx5ZXN8MjB8ZmFkZU91dHxvblN0YXJ0fG5vfHllcw==&ve=050915"
+          title="Instagram Widget" class="snapwidget-widget" allowTransparency="true"
+         frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:120px"></iframe>
+      
+    </div>
         
-  </div>
-  <div class="col-xs-6 col-md-4">
-	<div class="page-header">
-  <h3>Instagram Feeds</h3>
-</div>
-		<!-- SnapWidget -->
-<!-- SnapWidget -->
-<iframe src="http://snapwidget.com/sc/?u=aGFwcHloYXBweWVuZ2luZWVyfGlufDEyMHwxMHwxfHx5ZXN8MjB8ZmFkZU91dHxvblN0YXJ0fG5vfHllcw==&ve=050915"
-		title="Instagram Widget" class="snapwidget-widget" allowTransparency="true"
-		frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:120px"></iframe>
-	
-  </div>
+  
+  
   <div class="col-xs-6 col-md-4">
 	<div class="page-header">
   <h3>Social Medias</h3>
