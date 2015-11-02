@@ -18,7 +18,7 @@
 <div class="container">
   <ul class="row">
       <li class="col-xs-6">
-          <img class="img-responsive" src="http://localhost:8080/happy-happy-engineer/pictures/kerr.jpg">
+          <img class="img-responsive" src="<?php echo base_url();?>pictures/kerr.jpg">
       </li>
       <li class="col-xs-6">
           <img class="img-responsive" src="<?php echo base_url();?>pictures/collins.jpg">

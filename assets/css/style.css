@@ -52,11 +52,13 @@ body{
 
 }
 #login-form{
-      padding-top: 5%;
-
- margin: 0 auto;
-width: 60%;
+padding-top: 50px;
+ margin-top: 50px;
 padding-bottom: 20px;
+}
+
+#img-login{
+      width: 100%;
 }
 #new_collection{
       font-family: sans-serif;

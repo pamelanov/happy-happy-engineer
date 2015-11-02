@@ -1,20 +1,10 @@
 
-<div class="container" id="login-form">
-
-<div class="col-lg-12">
-  <div class="col-lg-8">
-    <div class="panel-body">
-      <h1><center>H2E</center></h1>
-      
-      <center><img src="<?php echo base_url()?>index.php/pictures/brand_logo.jpg";" alt="H2E_Logo" style="height:500px"/></center>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <br>
-    <br>
-    <br>
-    <br>
-
+<div id="login-form">
+  
+ <div class="row">
+   <div class="col-xs-6 col-md-4">
+   </div>
+    <div class="col-xs-6 col-md-4">
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Login</h3>
@@ -34,8 +24,10 @@
         <div style="color:red" align="center"><?php if(! is_null($error_message)) echo $error_message;?></div>
       </div>
     </div>
+    </div>
+     <div class="col-xs-6 col-md-4">
+     </div>
 
 
-</div>
 </div>
 </div>
