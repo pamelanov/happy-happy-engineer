@@ -6,7 +6,7 @@
     <div class="panel-body">
       <h1><center>H2E</center></h1>
       
-      <center><img src="<?php echo base_url()?>index.php/pictures/brand_logo.jpg"; ?>" alt="H2E_Logo" style="height:500px"/></center>
+      <center><img src="<?php echo base_url()?>index.php/pictures/brand_logo.jpg";" alt="H2E_Logo" style="height:500px"/></center>
     </div>
   </div>
   <div class="col-lg-4">
