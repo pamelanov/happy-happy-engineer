@@ -19,28 +19,12 @@ class Home_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-<<<<<<< HEAD
-		// if($this->session->userdata('logged_in')){
-		// 	$session_data = $this->session->userdata('logged_in');
-		// 	$data['username'] = $session_data['username'];
-	 		
-	 		//view
+
 			$data['judul'] = "Happy Happy Engineer";
    			$data['main'] = "home";     
 			$this->load->view('template', $data);
 			
 			
-		// }
-		// else
-		// {
-		// 	redirect('auth','refresh');
-		// }
-=======
-	
-	    $data['judul'] = "Happy Happy Engineer";
-        $data['main'] = "home";     
-		$this->load->view('template', $data);
->>>>>>> origin/Arvins
 	}
 	// public function index()
 	// {
