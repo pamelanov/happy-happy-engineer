@@ -19,12 +19,9 @@
   </div>
 
     <div class="w3-group"> 
-<<<<<<< HEAD
-    <textarea name="isiBerita" class="w3-input" type="text" rows="8" cols="50"  required></textarea>
-=======
-    <textarea id="txtArea" name="isiBerita" class="w3-input" type="text" rows="8" cols="50"  required></textarea>
 
->>>>>>> refs/remotes/origin/Arvins
+    <textarea id="txtArea" onkeypress="onTestChange()"; name="isiBerita" class="w3-input" type="text" rows="8" cols="50"  required></textarea>
+
     <label class="w3-label">Isi Berita</label>
   </div>
       
@@ -55,8 +52,7 @@
 </form>
 
 </div>
-<<<<<<< HEAD
-=======
+
 
 <script>
 function onTestChange() {
@@ -64,7 +60,7 @@ function onTestChange() {
 
     // If the user has pressed enter
     if (key == 13) {
-        document.getElementById("txtArea").value =document.getElementById("txtArea").value + "\n*";
+        document.getElementById("txtArea").value =document.getElementById("txtArea").value + "\n";
         return false;
     }
     else {
@@ -72,4 +68,3 @@ function onTestChange() {
     }
 }
 </script>
->>>>>>> refs/remotes/origin/Arvins

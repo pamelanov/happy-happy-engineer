@@ -31,8 +31,12 @@ function do_upload(){
 	  	
 	  if ( ! $this->upload->do_upload()){
 	  	 $error = array('error' => $this->upload->display_errors());
-
-	  	 $this->load->view('upload_news_form', $error);
+	  	 
+		    $data['judul'] = "Upload Failed";
+		    $data['main'] = "upload_news_failed";
+		    $this->load->view('template', $data);
+		    
+	  	 //$this->load->view('upload_news_form', $error);
 	  }
 	  else{
 		   $dataUpload = array();
@@ -50,11 +54,11 @@ function do_upload(){
 		   // memasukkan isian form ke dalam database
 		   $success = $this->news_upload_model->form_insert($data);
 		   
-		   if ($success) {
+		   	echo "string";
 		    $data['judul'] = "Upload Success";
-		    $data['main'] = "upload_success";
+		    $data['main'] = "upload_news_success";
 		    $this->load->view('template', $data);
-		    }
+		    
 	  }
   
  
