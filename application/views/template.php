@@ -131,11 +131,17 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
 	<!--<p><a href="#" id="admin-login"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</a></span></p>-->
 	</blockquote>
 	
+<<<<<<< HEAD
 		<p><a href="<?php echo base_url(); ?>index.php/auth">Admin Login</a></p>
 		<?php if($this->session->userdata('logged_in')){ ?>
         <a href="<?php echo base_url()?>index.php/auth/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 		<?php } ?>
         
+=======
+		<p><a href="<?php echo base_url(); ?>index.php/login">Admin Login</a></p>
+		<p><a href="<?php echo base_url(); ?>index.php/upload">Upload tester</a></p>
+		
+>>>>>>> Pamela
   </div>
   <div class="col-xs-6 col-md-4">
 	<div class="page-header">

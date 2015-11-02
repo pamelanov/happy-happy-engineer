@@ -10,6 +10,7 @@ function form_insert($data){
         return true;
     }
 
+<<<<<<< HEAD
     else {
         return false;
     }
@@ -22,6 +23,12 @@ function form_edit($ID, $data){
         return true;
     }
     else return false;
+=======
+$this->db->insert('Produk', $data);
+
+
+
+>>>>>>> Pamela
 }
 
 

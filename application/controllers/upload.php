@@ -13,7 +13,11 @@ class Upload extends CI_Controller {
 	{
 		
 		 $data['judul'] = "Upload Form";
+<<<<<<< HEAD
         $data['main'] = "upload_form";
+=======
+        $data['main'] = "percobaan/upload_form";
+>>>>>>> Pamela
 		$data['error'] = ' ';
 		$this->load->view('template', $data, array('error' => ' ' ));
 
@@ -22,6 +26,12 @@ class Upload extends CI_Controller {
 
 	function do_upload()
 	{
+<<<<<<< HEAD
+=======
+
+
+		
+>>>>>>> Pamela
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['image_width']	= '0';
@@ -55,6 +65,7 @@ class Upload extends CI_Controller {
 			'Upload_Path' => $dataUpload['file_name']
 			);
 
+<<<<<<< HEAD
 			// memasukkan isian form ke dalam database
 			$success = $this->upload_model->form_insert($data);
 			
@@ -110,11 +121,16 @@ class Upload extends CI_Controller {
 				$data['main'] = "edit_failed";
 				$this->load->view('template', $data);
 			 }
+=======
+			$this->load->view('percobaan/upload_form', $error);
+>>>>>>> Pamela
 		}
 		else
+	
 		{
 			$dataUpload = array();
 			$dataUpload = $this->upload->data();
+<<<<<<< HEAD
 			//$this->load->view('upload_success', $dataUpload);
 			
 			// menyimpan isian dari form ke dalam variabel
@@ -147,6 +163,29 @@ class Upload extends CI_Controller {
 		}
 		
 		
+=======
+
+			
+
+			$this->load->view('percobaan/upload_success', $dataUpload);
+			
+				$data = array(
+'Jenis_Produk' => $this->input->post('productname'),
+'ID_Produk' => $this->input->post('productcode'),
+'Harga' => $this->input->post('price'),
+'Size' => $this->input->post('sizes'),
+'Gender' => $this->input->post('gender'),
+'Deskripsi_Produk' => $this->input->post('description'),
+'Upload_Path' => $dataUpload['file_name']
+);
+	
+
+	$this->upload_model->form_insert($data);
+		}
+		
+	
+				
+>>>>>>> Pamela
 	}
 }
 ?>
