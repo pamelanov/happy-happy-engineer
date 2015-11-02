@@ -29,6 +29,7 @@ class Upload extends CI_Controller {
 		'sizes' => $this->input->post('sizes'),
 		'description' => $this->input->post('description')
 		);
+<<<<<<< HEAD
 
 
 		$config['upload_path'] = './uploads/';
@@ -80,6 +81,8 @@ class Upload extends CI_Controller {
 				$this->load->view('template', $data);
 			 }
 		}
+=======
+>>>>>>> refs/remotes/origin/Arvins
 		
 	
 				
