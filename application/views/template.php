@@ -13,26 +13,23 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
     <script src="<?php echo base_url(); ?>assets/jquery/bootbox.min.js"></script>
      <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/jquery/jquery-1.11.2.js"></script>
-    
-    
-    
     <script src="<?php echo base_url(); ?>assets/jquery/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/bootstrap-3.3.4-dist/js/scripts.js"></script>
     
-      <!-- code slideshow foto gallery -->
-
-  
-      <!-- Compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css">-->
-
-  <!-- Compiled and minified JavaScript --><!--
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
+    
   <link href="<?php echo base_url();?>assets/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
      <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
    <link href="<?php echo base_url();?>assets/css/w3school.css" rel="stylesheet" type="text/css" />
+   
+
+       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="<?php echo base_url(); ?>assets/jquery/jquery.js"></script>
 
    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Josefin+Sans|Dosis' rel='stylesheet' type='text/css'>
+
   
         <script>
         

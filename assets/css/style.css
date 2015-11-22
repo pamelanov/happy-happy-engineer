@@ -1,5 +1,50 @@
+@font-face {
+  font-family: 'Astounding_news';
+  src: url('Astounding_news.ttf'); /* IE9 Compat Modes */
+}
+
 body{
       background-color: #f1f1f1;
+}
+
+.judul_news{
+      font-family: 'Astounding_news', Fallback, sans-serif;
+}
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+      position: static;
+  }
+  
+  #sidebar.affix {
+      position: fixed;
+      top: 0;
+      width:21.2%;
+  }
+}
+
+.highlight {
+    color: #020528;
+}
+
+
+#news_content{
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+.highlight-bk {
+	background-color:#020528;
+    color: white;
+    padding:1px;
+    width:100%;
+    font-family: 'Astounding_news', Fallback, sans-serif;
+    font-size: large;
+}
+
+.highlight-bk:hover {
+	background-color:white;
+    color: #020528;
+    width:100%;
 }
 
 #page-active{
@@ -42,17 +87,48 @@ body{
       
 }
 
+.img-center {
+	margin: 0 auto;
+}
+
+#foto_news {
+	margin: 0 auto;
+}
+
+#judul_about_us{
+      font-family: 'Lobster', cursive;
+      background-color: #020528;
+      color: white;
+      padding-left: 15px;
+      padding-right: 5px;
+}
+
 #upload_success{
       padding-top: 25%;
       padding-bottom: 25%;
 }
 
+.well{
+      background-color: #FCFCFC;
+}
+
+.media{
+      padding-left: 0px;
+}
 #img_edit{
  width: 500px;
 
 }
+
+#gallery{
+   opacity: 0.5;   
+}
+
+#gallery:hover{
+      opacity: 1.0;
+}
 #login-form{
-padding-top: 50px;
+padding-top: 5px;
  margin-top: 50px;
 padding-bottom: 20px;
 }
@@ -195,8 +271,8 @@ margin-right:15px;
 
 #about_us{
    margin-top: 80px;
-   margin-left: 150px;
-   margin-right: 10px; 
+   margin-left: 5%;
+   margin-right: 5%; 
 }
 #tulisan h2{
    font-size: 40px;

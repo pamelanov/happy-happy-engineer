@@ -52,6 +52,7 @@
    $data['offset'] = $offset;
 
    	$data['data'] = $this->news_model->view($config['per_page'], $offset);
+	$data['titles'] = $this->news_model->getAll();
 	$data['judul'] = "News!";
     $data['main'] = "news_view";     
 		$this->load->view('template', $data);
