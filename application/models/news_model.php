@@ -13,6 +13,16 @@
   return $query->result();
   
   }
+  
+  function getAll()  {
+  
+  /*variable num dan offset digunakan untuk mengatur jumlah
+    data yang akan dipaging, yang kita panggil di controller*/
+  
+  $query = $this->db->get("news");
+  return $query->result();
+  
+  }
  }
 
 ?>

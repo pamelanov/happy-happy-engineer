@@ -1,25 +1,83 @@
-<?php if($this->session->userdata('logged_in')){		 		?>
-	<a id="" class="glyphicon glyphicon-plus" href="<?php echo base_url(); ?>index.php/upload_news">Add News</a>
-<?php	} ?>
+<div id="page-header-news">
+<?php if($this->session->userdata('logged_in')){ ?>
+<a href="<?php echo base_url(); ?>index.php/upload_news"><p id='new_collection' class="text-center"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add News</p></a>
+<?php } ?>
+</div>
 
-<?php
+
+<header class="masthead">
+  <div class="container">
+
+      <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="judul_about_us">News
+                    <small>Happy Happy Engineer</small>
+                </h1>
+			</div>
+	  </div>
+
+</div>
+  
+<!--  <div class="container">
+	<div class="row">
+      <div class="col col-sm-12">
+        
+        <div class="panel">
+        <div class="panel-body">
+          You may want to put some news here  <span class="glyphicon glyphicon-heart-empty"></span>
+        </div>
+        </div>
+        
+      </div>
+  	</div>
+  </div>-->
+</header>
+
+<!-- Begin Body -->
+<div class="container">
+	<div class="row">
+
+      		<div class="col col-sm-9">
+			   			   <?php
    $no = $offset;
    foreach($data as $row ) { ?>
-   <br>
-		<div class="media">
-		  <div class="media-left">
-		    <a href="#">
-		      <img class="media-object" src="<?php echo base_url();?>foto_berita/<?php echo $row->foto_berita;?>" alt="news_controller">
-		    </a>
-		  </div>
-		  <div class="media-body">
-		    <h2 id="judul-berita" class="text-left"><?php echo $row->judul_berita; ?></h2	>
-		    <h6 id="tanggal_berita"><?php echo $row->Tanggal;?> </h6>
-		    <p id="isi-berita"><?php echo $row ->isi_berita; ?></p>
-		  </div>
-		</div>
-	<?php } ?>
+              <div class="panel">
+			   
+              <h1 class="text-center"><div class="judul_news"><a href="#"><?php echo $row->judul_berita; ?></a></div></h1>
+			   <h5 class="text-center"><?php echo $row->Tanggal; ?></h5>
 
-<div class="panel-footer" style="height:40px;">
+              <div class="row">
+              	<div>
+                  <img src="<?php echo base_url();?>foto_berita/<?php echo $row->foto_berita;?>" class="img-responsive img-center">
+                </div> 
+              </div>
+        
+              	<p id="news_content"><?php echo $row ->isi_berita; ?></p>
+
+               
+             	</div>
+			  <?php } ?>
+			  <div class="panel-footer" style="height:40px;">
     <?php echo $halaman ?> <!--Memanggil variable pagination-->
 </div>
+  
+      	</div>
+			
+			  			<div class="col col-sm-3">
+              	<div id="sidebar">
+      			<ul class="nav nav-stacked">
+                    <li><h3 class="highlight"><div class="judul_news">Archives <i class="glyphicon glyphicon-dashboard pull-right"></i></div></h3></li>
+					<?php
+					 foreach($titles as $row ) { ?>
+				     <li><a href="#" class="highlight-bk"><?php echo $row->judul_berita; ?></a></li>
+					 <?php } ?>
+				</ul>
+				
+ 
+               </div>
+      		</div>
+						
+   
+  	</div>
+</div>
+

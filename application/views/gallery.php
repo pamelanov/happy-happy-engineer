@@ -1,8 +1,6 @@
 
 
-<div class="w3-container w3-teal">
-  <h1>Summer Collection 2015</h1>
-</div>
+<p id='collection_title' class="text-right">Gallery</p>
 
 
 
@@ -18,22 +16,22 @@
 <div class="container">
   <ul class="row">
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/kerr.jpg">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/kerr.jpg">
       </li>
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/collins.jpg">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/collins.jpg">
       </li>
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/italy.jpg">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/italy.jpg">
       </li>
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/slideshow.png">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/slideshow.png">
       </li>
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
       </li>
       <li class="col-xs-6">
-          <img class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
+          <img id="gallery" class="img-responsive" src="<?php echo base_url();?>pictures/H2E_1488.jpg">
       </li>
       
     </ul>

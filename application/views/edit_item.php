@@ -66,15 +66,6 @@
 
           <input class="w3-btn w3-teal" type="submit" value="upload" />
 
-<!--   <label class="w3-checkbox">
-    <input type="checkbox" checked="checked">
-    <div class="w3-checkmark"></div> Milk
-  </label><br>
-  <label class="w3-checkbox">
-    <input type="checkbox">
-    <div class="w3-checkmark"></div> Sugar
-  </label><br>-->
-  
 
 
 <br /><br />

@@ -58,7 +58,7 @@ $data['judul'] = "All Collection";
    /*memanggil view pagination*/
   }
   
-  function edit($id){
+  function edit($url, $id){
    $datas = $this->model_produk->getItemData($id);
    
     $data['item_data'] = $datas;
@@ -67,7 +67,7 @@ $data['judul'] = "All Collection";
 	$this->load->view('template', $data);
   }
   
-  function delete($url, $id){
+  function delete($id){
    $datas = $this->model_produk->deleteData($id);
    if ($datas == true){
 	//$data['status'] = true;
