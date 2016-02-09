@@ -1,12 +1,12 @@
 <?php if(!defined('BASEPATH')) exit ('No direct script access allowed');
 
- class Gallery extends CI_Controller {
+ class gallery_controller extends CI_Controller {
  
  
   public function __Construct(){
    parent ::__construct();
    
-   $this->load->model('G');
+   $this->load->model('gallery_model');
   
   }
   
@@ -17,9 +17,9 @@
   
   public function view($offset=0) {
   
-   $jml = $this->db->get('Produk');
+   $jml = $this->db->get('Gallery');
    
-   $config['base_url'] = base_url().'index.php/men_collection/view';
+   $config['base_url'] = base_url().'index.php/gallery/view';
    
    $config['total_rows'] = $jml->num_rows();
    $config['per_page'] = 6; /*Jumlah data yang dipanggil perhalaman*/ 
@@ -48,14 +48,27 @@
    /*membuat variable halaman untuk dipanggil di view nantinya*/
    $data['offset'] = $offset;
 
-   $data['data'] = $this->men_col_model->view($config['per_page'], $offset);
-$data['judul'] = "Men Collection";
-    $data['main'] = "men_collection_view";     
+   $data['data'] = $this->gallery_model->view($config['per_page'], $offset);
+$data['judul'] = "Gallery";
+    $data['main'] = "gallery_view";     
 		$this->load->view('template', $data);
 
    /*memanggil view pagination*/
   }
   
+
+    function delete($id){
+   $datas = $this->gallery_model->deleteData($id);
+   if ($datas == true){
+  //$data['status'] = true;
+  redirect($url, 'refresh');
+   }
+   else{
+  //$data['status'] = false;
+  redirect($this->uri->uri_string());
+   }
+
+  }
  }
 
 ?>
