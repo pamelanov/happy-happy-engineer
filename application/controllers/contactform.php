@@ -31,14 +31,14 @@ class contactform extends CI_Controller
             $message = $this->input->post('message');
 
             //set to_email id to which you want to receive mails
-            $to_email = 'user@gmail.com';
+            $to_email = 'samuar.arvin@gmail.com';
 
             //configure email settings
             $config['protocol'] = 'smtp';
             $config['smtp_host'] = 'ssl://smtp.gmail.com';
             $config['smtp_port'] = '465';
-            $config['smtp_user'] = 'user@gmail.com';
-            $config['smtp_pass'] = 'password';
+            $config['smtp_user'] = 'samuar.arvin@gmail.com'; //change this
+            $config['smtp_pass'] = 'mahasiswafasilk0m'; //change this
             $config['mailtype'] = 'html';
             $config['charset'] = 'iso-8859-1';
             $config['wordwrap'] = TRUE;
@@ -55,13 +55,13 @@ class contactform extends CI_Controller
             {
                 // mail sent
                 $this->session->set_flashdata('msg','<div class="alert alert-success text-center">Your mail has been sent successfully!</div>');
-                redirect('contactform/index');
+                redirect('home_controller/contact_us');
             }
             else
             {
                 //error
                 $this->session->set_flashdata('msg','<div class="alert alert-danger text-center">There is error in sending mail! Please try again later</div>');
-                redirect('contactform/index');
+                redirect('home_controller/contact_us');
             }
         }
     }
