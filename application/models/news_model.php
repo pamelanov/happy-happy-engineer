@@ -13,6 +13,14 @@
   return $query->result();
   
   }
+
+  function getItemData($id){
+  
+  $query = $this->db->query("Select * from news where ID_News = '$id'");
+  
+  return $query->result_array();
+  
+  }
   
   function getAll()  {
   

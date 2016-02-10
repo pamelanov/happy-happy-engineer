@@ -41,7 +41,8 @@
 </div>
  <!-- container -->  
 
-<script type="text/javascript">
+
+<script language="text/javascript">
   
    $(document).ready(function(){
            $('li img').on('click',function(){

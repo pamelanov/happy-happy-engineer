@@ -14,6 +14,13 @@
   return $query->result();
   
   }
+
+  function deleteData($id){
+   $query = $this->db->query("DELETE from Gallery where Upload_Path ='$id'");
+   
+   return true;
+  }
+ }
  }
 
 ?>

@@ -37,31 +37,37 @@
 <div class="container">
 	<div class="row">
 
-      		<div class="col col-sm-9">
-			   			   <?php
-   $no = $offset;
-   foreach($data as $row ) { ?>
-              <div class="panel">
-			   
-              <h1 class="text-center"><div class="judul_news"><a href="#"><?php echo $row->judul_berita; ?></a></div></h1>
-			   <h5 class="text-center"><?php echo $row->Tanggal; ?></h5>
+	<div class="col col-sm-9">
+ 			   <?php
+          $no = $offset;
+          foreach($data as $row ) { 
+        ?>
+    <div class="panel">
+      <h1 class="text-center"><div class="judul_news"><a href="#"><?php echo $row->judul_berita; ?></a></div></h1>
+      <h5 class="text-center"><?php echo $row->Tanggal; ?></h5>
+      <div class="row">
+      	<div>
+          <img src="<?php echo base_url();?>foto_berita/<?php echo $row->foto_berita;?>" class="img-responsive img-center">
+        </div> 
+      </div>
+     	<p id="news_content"><?php echo $row ->isi_berita; ?></p>
 
-              <div class="row">
-              	<div>
-                  <img src="<?php echo base_url();?>foto_berita/<?php echo $row->foto_berita;?>" class="img-responsive img-center">
-                </div> 
-              </div>
-        
-              	<p id="news_content"><?php echo $row ->isi_berita; ?></p>
-
-               
-             	</div>
-			  <?php } ?>
-			  <div class="panel-footer" style="height:40px;">
+       <?php if($this->session->userdata('logged_in')){
+          echo anchor('news_controller/edit/'.$url.'/'.$row->ID_Produk, '<button type="submit" class="btn btn-primary">
+              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+               Edit</button>');
+          echo str_repeat('&nbsp;', 2);
+          echo anchor('news_controller/delete/'.$row->ID_Produk, '<button type="submit" class="btn btn-danger">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+               Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
+        ?>
+    </div>
+			 
+  <div class="panel-footer" style="height:40px;">
     <?php echo $halaman ?> <!--Memanggil variable pagination-->
-</div>
+  </div>
   
-      	</div>
+</div>
 			
 			  			<div class="col col-sm-3">
               	<div id="sidebar">
@@ -80,4 +86,3 @@
    
   	</div>
 </div>
-
