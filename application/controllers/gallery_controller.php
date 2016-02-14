@@ -19,7 +19,7 @@
   
    $jml = $this->db->get('Gallery');
    
-   $config['base_url'] = base_url().'index.php/gallery/view';
+   $config['base_url'] = base_url().'index.php/gallery_controller/view';
    
    $config['total_rows'] = $jml->num_rows();
    $config['per_page'] = 6; /*Jumlah data yang dipanggil perhalaman*/ 
