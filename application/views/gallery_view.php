@@ -1,17 +1,17 @@
+<title><?php echo $judul; ?></title>
 
 <p id='collection_title' class="text-right">Gallery</p>
 
 <?php if($this->session->userdata('logged_in')){ ?>
-<a href="<?php echo base_url(); ?>index.php/Upload_Gallery_cont"><p id='new_collection' class="text-center"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Gallery</p></a>
+<a href="<?php echo base_url(); ?>index.php/Upload_Gallery_cont"><p id='new_collection' 
+  class="text-center"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true">
+  </span> Add New Gallery</p></a>
 <?php } ?>
 
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-contentLabel" aria-hidden="true">
-  <?php
-    $url = $this->uri->uri_string();
-    $no = $offset;
-    foreach($data as $row ) { 
-  ?>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-contentLabel" 
+  aria-hidden="true">
+ 
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body"> 
@@ -23,17 +23,23 @@
 <br>
 
 <div class="container">
- <ul class="row">
-    <li class="col-xs-6">
-        <img id="gallery" class="img-responsive" src="<?php echo base_url();?>uploads/<?php echo $row->Upload_Path;?>">
+  <?php
+    $url = $this->uri->uri_string();
+    $no = $offset;
+    foreach($data as $row ) {
+  ?>
+    <ul class="row">
+      <li class="col-xs-6">
+        <img id="gallery" class="img-responsive" src="<?php echo base_url();?>foto_gallery/<?php echo $row->foto_gallery;?>">
         <?php if($this->session->userdata('logged_in')){
           echo str_repeat('&nbsp;', 2);
-          echo anchor('gallery_controller/delete/'.$row->Upload_Path, '<button type="submit" class="btn btn-danger">
+          echo anchor('gallery_controller/delete/'.$row->foto_gallery, '<button type="submit" class="btn btn-danger">
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                      Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
         } ?>
-    </li>      
-  </ul>
+      </li>  
+    </ul>
+  <?php } ?> 
 </div>
 
 <div class="panel-footer" style="height:40px;">

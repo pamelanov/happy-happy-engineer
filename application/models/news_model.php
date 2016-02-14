@@ -31,6 +31,12 @@
   return $query->result();
   
   }
+
+  function deleteData($id){
+   $query = $this->db->query("DELETE from news where ID_News ='$id'");
+   
+   return true;
+  }
  }
 
 ?>

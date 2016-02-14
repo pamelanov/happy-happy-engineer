@@ -64,8 +64,8 @@
     $datas = $this->news_model->getItemData($id);
    
     $data['item_data'] = $datas;
-    $data['judul'] = "Edit Item";
-    $data['main'] = "edit_item";     
+    $data['judul'] = "Edit News";
+    $data['main'] = "edit_news_view";     
     $this->load->view('template', $data);
   }
 

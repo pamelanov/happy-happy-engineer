@@ -48,8 +48,8 @@
    /*membuat variable halaman untuk dipanggil di view nantinya*/
    $data['offset'] = $offset;
 
-   $data['data'] = $this->gallery_model->view($config['per_page'], $offset);
-$data['judul'] = "Gallery";
+    $data['data'] = $this->gallery_model->view($config['per_page'], $offset);
+    $data['judul'] = "Gallery";
     $data['main'] = "gallery_view";     
 		$this->load->view('template', $data);
 
@@ -57,18 +57,17 @@ $data['judul'] = "Gallery";
   }
   
 
-    function delete($id){
-   $datas = $this->gallery_model->deleteData($id);
-   if ($datas == true){
-  //$data['status'] = true;
-  redirect($url, 'refresh');
-   }
-   else{
-  //$data['status'] = false;
-  redirect($this->uri->uri_string());
-   }
-
+  function delete($id){
+    $datas = $this->gallery_model->deleteData($id);
+    if ($datas == true){
+    //$data['status'] = true;
+    redirect($url, 'refresh');
+    }
+    else{
+     //$data['status'] = false;
+      redirect($this->uri->uri_string());
+    }
   }
- }
+}
 
 ?>
