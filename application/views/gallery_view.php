@@ -1,7 +1,7 @@
 <title><?php echo $judul; ?></title>
 
 <div class="page-header">
-  <p id='collection_title' class="text-right">Men Collection</p>
+  <p id='collection_title' class="text-right">Gallery</p>
 
   <?php if($this->session->userdata('logged_in')){ ?>
   <a href="<?php echo base_url(); ?>index.php/Upload_Gallery_cont"><p id='new_collection' 
