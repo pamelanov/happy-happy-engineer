@@ -13,6 +13,14 @@
   return $query->result();
   
   }
+
+  function getItemData($id){
+  
+  $query = $this->db->query("Select * from news where ID_News = '$id'");
+  
+  return $query->result_array();
+  
+  }
   
   function getAll()  {
   
@@ -22,6 +30,12 @@
   $query = $this->db->get("news");
   return $query->result();
   
+  }
+
+  function deleteData($id){
+   $query = $this->db->query("DELETE from news where ID_News ='$id'");
+   
+   return true;
   }
  }
 

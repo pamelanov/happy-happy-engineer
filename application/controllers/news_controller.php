@@ -59,7 +59,28 @@
 
    /*memanggil view pagination*/
   }
+
+  function edit($url, $id){
+    $datas = $this->news_model->getItemData($id);
+   
+    $data['item_data'] = $datas;
+    $data['judul'] = "Edit News";
+    $data['main'] = "edit_news_view";     
+    $this->load->view('template', $data);
+  }
+
+  function delete($id){
+    $datas = $this->news_model->deleteData($id);
+    if ($datas == true){
+     //$data['status'] = true;
+      redirect($url, 'refresh');
+    }
+    else{
+      //$data['status'] = false;
+      redirect($this->uri->uri_string());
+    }
+  }
   
- }
+}
 
 ?>

@@ -58,14 +58,14 @@ class Home_controller extends CI_Controller {
 	{
 	
 	    $data['judul'] = "Contact Us";
-        $data['main'] = "contact_us";     
+        $data['main'] = "contact_form_view";     
 		$this->load->view('template', $data);
 	}
 	public function gallery()
 	{
 	
 	    $data['judul'] = "Gallery";
-        $data['main'] = "gallery";     
+        $data['main'] = "gallery_view";     
 		$this->load->view('template', $data);
 	}
 	public function news()
