@@ -50,7 +50,7 @@
           </div>
          	<p id="news_content"><?php echo $row ->isi_berita; ?></p>
 
-<<<<<<< Updated upstream
+
            <?php if($this->session->userdata('logged_in')){
               echo anchor('news_controller/edit/'.$url.'/'.$row->ID_News, '<button type="submit" class="btn btn-primary">
                   <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -62,32 +62,20 @@
             }?>
         </div>
 			<?php }?>
-=======
-         <?php if($this->session->userdata('logged_in')){
-            echo anchor('news_controller/edit/'.$url.'/'.$row->ID_Produk, '<button type="submit" class="btn btn-primary">
-                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                 Edit</button>');
-            echo str_repeat('&nbsp;', 2);
-            echo anchor('news_controller/delete/'.$row->ID_Produk, '<button type="submit" class="btn btn-danger">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                 Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
-		 }
-          ?>
-      </div>
-	</div>
-			 
-      <div class="panel-footer" style="height:40px;">
-        <?php echo $halaman ?> <!--Memanggil variable pagination-->
-      </div>
-  
->>>>>>> Stashed changes
-    </div>
-			
+
     <div class="panel-footer" style="height:40px;">
       <?php echo $halaman ?> <!--Memanggil variable pagination-->
     </div>
+      </div>
+	
+			 
+
+   
+			
+
 		
     <div class="col col-sm-3">
+	  
      	<div id="sidebar">
     		<ul class="nav nav-stacked">
           <li><h3 class="highlight"><div class="judul_news">Archives <i class="glyphicon glyphicon-dashboard pull-right"></i></div></h3></li>
@@ -99,5 +87,5 @@
 				</ul>
 			</div>
     </div>
-
+</div>
 	</div>
