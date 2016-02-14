@@ -77,7 +77,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
             <li><a href="<?php echo base_url();?>index.php/all_collections">All Collections</a></li>
           </ul>
         </li>
-    <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/gallery" id="navbarText">Gallery</a></li>
+    <li id="navbarText"><a href="<?php echo base_url();?>index.php/gallery_controller" id="navbarText">Gallery</a></li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/news_controller" id="navbarText">News</a></li>
     <li id="navbarText"><a href="<?php echo base_url();?>index.php/home_controller/contact_us" id="navbarText">Order!</a></li>
       </ul>
