@@ -6,7 +6,10 @@ class upload_gallery_model extends CI_Model{
 
 
 	function form_insert($data){
-   	 $this->db->insert('Gallery', $data);
+   	 if ($this->db->insert('Gallery', $data)){
+		return true;
+	 }
+	 else return false;
 	}
 }
 
