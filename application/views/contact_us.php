@@ -6,8 +6,9 @@
    </div> 
   <div class="col-sm-8 col-md-8 col-xs-12">
     <div id="tulisan">
+      <div class="panel panel-primary">How to Order</div>
       <h2> How To Order <h2>
-      <h3> Via Line : @happy2engineer <br>
+      <h3> Via Linne : @happy2engineer <br>
             1. Add linenya <br>
             2. Liat barang di website ini <br>
             3. Tentuin pilihan <br>

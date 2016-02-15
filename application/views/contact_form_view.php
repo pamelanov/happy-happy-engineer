@@ -3,14 +3,14 @@
 
 
 <div class= "row" id="contact_us_order">
-  <div class="col-sm-6 col-md-4 col-xs-6">
-    <!-- harusnya gambar order -->
-    <img src ="<?php echo base_url();?>pictures/order.png" alt="order">
-   </div> 
+
   <div class="col-sm-8 col-md-8 col-xs-12">
-    <div id="tulisan">
-      <h2> How To Order <h2>
-      <h3> Via Line : @happy2engineer <br>
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+    <h3 class="panel-title">How to Order</h3>
+  </div>
+  <div class="panel-body">
+    Via Line : @happy2engineer <br>
             1. Add linenya <br>
             2. Liat barang di website ini <br>
             3. Tentuin pilihan <br>
@@ -21,8 +21,9 @@
             2. Liat barang di website ini <br>
             3. Tentuin pilihan <br>
             4. Chat kita ;) <br>
-             </h3>   
-    </div>
+  </div>
+      </div>
+
   </div>
 </div>
 </br>
