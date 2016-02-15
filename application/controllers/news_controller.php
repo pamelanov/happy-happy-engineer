@@ -98,20 +98,20 @@
       'judul_berita' => $this->input->post('judulBerita'),
        'Tanggal' => $this->input->post('tanggalBerita'),
        'isi_berita' => $this->input->post('isiBerita'),
-       'foto_berita' => $dataUpload['file_name']
+       
       );
       
-      $success = $this->news_model->form_edit($this->input->post('ori_prod_cod'), $data);
+      $success = $this->news_model->form_edit($this->input->post('id_news'), $data);
       
       if ($success) {
         $data['judul'] = "Edit Success";
-        $data['main'] = "edit_success";
+        $data['main'] = "news_edit_success";
         $this->load->view('template', $data);
        }
        
        else{
         $data['judul'] = "Edit Failed";
-        $data['main'] = "edit_failed";
+        $data['main'] = "news_edit_failed";
         $this->load->view('template', $data);
        }
 
@@ -135,17 +135,17 @@
       );
 
       // memasukkan isian form ke dalam database
-      $success = $this->news_model->form_edit($this->input->post('ori_prod_cod'), $data);
+      $success = $this->news_model->form_edit($this->input->post('id_news'), $data);
       
       if ($success) {
         $data['judul'] = "Edit Success";
-        $data['main'] = "edit_success";
+        $data['main'] = "news_edit_success";
         $this->load->view('template', $data);
        }
        
        else{
         $data['judul'] = "Edit Failed";
-        $data['main'] = "edit_failed";
+        $data['main'] = "news_edit_failed";
         $this->load->view('template', $data);
        }
       

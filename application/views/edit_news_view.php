@@ -21,7 +21,9 @@
     <input name="tanggalBerita" type="date" value="<?php echo $row['Tanggal'];?>" class="w3-input" type="text" style="width:100%"  required>
     <label class="w3-label">Tanggal Berita</label>
   </div>
-
+  <div class="w3-group"> 
+    <input type="hidden" value="<?php echo $row['ID_News'];?>" name="id_news">
+  </div>
  <div class="w3-group"> 
     <textarea name="isiBerita" class="w3-input" type="text" style="width:100%" required>
         <?php echo $row['isi_berita'];?>
@@ -32,7 +34,7 @@
       <label class="w3-label">Picture</label>
       <br/>
       <div class="thumbnail" id="men-collection-col">
-        <img id = "img_edit" src="<?php echo base_url();?>uploads/<?php echo $row['foto_berita'];?>">
+        <img id = "img_edit" src="<?php echo base_url();?>foto_berita/<?php echo $row['foto_berita'];?>">
       </div>
     </div>
   </center>
