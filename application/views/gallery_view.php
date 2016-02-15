@@ -18,14 +18,21 @@
     $no = $offset;
     foreach($data as $row ) {
   ?>
-    <div class="col-lg-3 col-sm-4 col-6">
+  <div class="row">
+    <div class="col-md-12">
       <a href="#" title="Image 1"><img src="<?php echo base_url();?>foto_gallery/<?php echo $row->foto_gallery;?>"></a>
+      
       <?php if($this->session->userdata('logged_in')){
+        echo "<br/><br/>";
         echo str_repeat('&nbsp;', 2);
         echo anchor('gallery_controller/delete/'.$row->foto_gallery, '<button type="submit" class="btn btn-danger">
           <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
           Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
+        
+        echo "<br/><br/><br/>";
         } ?>
+        <br/><br/>
+    </div>
     </div>
     
   <?php } ?> 
