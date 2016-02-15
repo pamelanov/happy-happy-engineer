@@ -29,13 +29,13 @@
           <p class="text-right"><b>Price: Rp<?php echo number_format($row->Harga); ?></b></p>
           <p class="text-right">Available Sizes: <?php echo $row->Size; ?></p>
 <?php if($this->session->userdata('logged_in')){
-  echo anchor('all_collections/edit/'.$row->ID_Produk, '<button type="submit" class="btn btn-primary">
+ echo anchor('all_collections/edit/'.$url.'/'.$row->ID_Produk, '<button type="submit" class="btn btn-primary">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-             Edit</button>');
+              Edit</button>');
    echo str_repeat('&nbsp;', 2);
-echo anchor('all_collections/delete/'.$url.'/'.$row->ID_Produk, '<button type="submit" class="btn btn-danger">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-             Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
+            echo anchor('all_collections/delete/'.$row->ID_Produk, '<button type="submit" class="btn btn-danger">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+              Delete</button>',array('onclick' => "return confirm('Are you sure to delete this item?')"));
 
 } ?>
           

@@ -123,7 +123,7 @@ class Upload extends CI_Controller {
 				$this->load->view('template', $data);
 			 }
 
-			$this->load->view('percobaan/upload_form', $error);
+			
 
 		}
 		else
