@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2015 at 11:39 AM
+-- Generation Time: Feb 14, 2016 at 03:02 PM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -42,6 +42,26 @@ INSERT INTO `administrator` (`username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `foto_gallery` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`foto_gallery`) VALUES
+('asssss3.jpg'),
+('asssss4.jpg'),
+('Jerseyfix.png'),
+('asssss5.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `news`
 --
 
@@ -58,7 +78,6 @@ CREATE TABLE IF NOT EXISTS `news` (
 --
 
 INSERT INTO `news` (`ID_News`, `judul_berita`, `Tanggal`, `isi_berita`, `foto_berita`) VALUES
-(2, 'dansbdad', '2015-01-01', 'sdfsdfsfsdf', 'IMG_36041.JPG'),
 (3, 'HAHAHA', '2015-01-01', 'Jerman sukses meredam perlawanan sengit Georgia dengan meraih kemenangan tipis 2-1 dalam laga pamungkas kualifikasi Piala Eropa 2016 di Red Bull Arena Lipzig, Senin (12/10) dini hari WIB. Hasil ini cukup bagi pasukan Die Mannschaft untuk lolos ke babak utama turnamen usai menjadi pemuncak Grup D kualifikasi.\r\n\r\nBabak Pertama:\r\n\r\nMembutuhkan kemenangan guna memastikan tempat di babak utama Piala Eropa sekaligus memuncaki persaingan grup, Jerman langsung tampil menggebrak sejak peluit awal pertandingan dibunyikan oleh wasit.\r\n\r\nKans matang bagi Jerman untuk membuka keunggulan datang di menit ke-11, namun tembakan Marco Reus mampu dimentahkan Nukri Revishvili. Semenit kemudian, Reus kembali mampu menembus pertahanan Georgia, hanya saja tembakannya melesat jauh di atas mistar.\r\n\r\nHingga pertengahan babak pertama, selain barisan depan Die Mannschaft yang kurang optimal, ketangguhan Revishvili di bawah mistar juga membuat frustrasi tuan rumah. Serangan balik Georgia harus diwaspadai, Tornike Okriashvili sempat memaksa Manuel Neuer melakukan penyelamatan krusial di menit ke-28.\r\n\r\nPertahanan rapat Georgia hingga penampilan prima Revishvili menjadi penghalang bagi Jerman untuk dapat membuka keunggulan dan hingga paruh pertama permainan berakhir, kedudukan imbang tanpa gol tetap bertahan.\r\n\r\nBabak Kedua:\r\n\r\nLima menit selepas jeda pertandingan, sebuah kesalahan dilakukan Jaba Kankava kala menjatukan Mesut Ozil di kotak penalti. Thomas Muller pun tak melewatkan kesempatan yang ada untuk membuka keunggulan Jerman usai eksekusinya membobol gawang Revishvili.\r\n\r\nMenit ke-53, Kankava menebus kesalahannya dengan mampu menyamakan kedudukan bagi Georgia setelah tembakan voli kaki kirinya dari jarak cukup jauh tak mampu diantisipasi oleh Neuer yang mati langkah dalam mengamankan gawangnya.\r\n\r\nGeorgia memang tak banyak menguasai permainan, namun serangan mereka begitu efektif dan hampir mampu berbalik unggul di menit ke-60 saat Okriashvili yang tak terkawal menyambar bola liar di depan gawang Jerman, akan tetapi sepakannya bisa diselamatkan Neuer.\r\n\r\nKeputusan Joachim Low yang memasukkan Max Kruse dalam 15 menit akhir permainan berbuah hasil ketika penyerang Wolfsburg itu sukes menyarangkan bola ke gawang Georgia di menit ke-79. Usai kembali memimpin, Jerman kian gencar menekan, hanya saja tidka ada tambahan gol tercipya hingga laga berakhir.\r\n\r\nSusunan Pemain:\r\n\r\nJERMAN (4-2-3-1): Neuer; Ginter, Boateng, Hummels, Hector; Kroos, Gundogan; Reus, Ozil, Muller; Schurrle.\r\n\r\nGEROGIA (5-4-1): Revishvili; Lobzhanidze, Kverkvelia, Amisulashvili, Kashia, Navalovski; Qazaishvili, Kankava, Kvekveskiri, Okriashvili; Gelashvili.', 'The_Coboys.jpg'),
 (4, 'DOta', '2015-04-02', '      hahaha hihihi hohoho huhuhu hehehe\r\nhahihuheho huhahiohe hasdbansbdad\r\nasdj;asjdlkjasdlasjd. ajsdkajsd;jasd\r\n\r\n     Ini ada alh contoh paragraf. apakah ketika di post akan menjadi sebuiah paragraf??\r\nha', 'BX6CAaZCUAARyTT.jpg'),
 (5, 'SFHUJUOO', '2015-02-01', 'JLSFL F', 'flag.png'),

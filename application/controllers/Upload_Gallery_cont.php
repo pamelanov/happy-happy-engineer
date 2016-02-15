@@ -22,7 +22,7 @@ class Upload_Gallery_cont extends CI_Controller {
 
 	function do_upload()
 	{
-		$config['upload_path'] = './uploads/';
+		$config['upload_path'] = './foto_gallery/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['image_width']	= '0';
 		$config['image_height']  = '0';
