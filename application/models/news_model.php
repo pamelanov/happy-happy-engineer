@@ -32,6 +32,15 @@
   
   }
 
+  function form_edit($ID, $data){
+    $this->db->where('ID_News', $ID);
+
+    if($this->db->update('news', $data)){
+        return true;
+    }
+    else return false;
+  }
+
   function deleteData($id){
    $query = $this->db->query("DELETE from news where ID_News ='$id'");
    

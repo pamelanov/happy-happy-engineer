@@ -8,7 +8,7 @@
 <div class="w3-card-24 w3-amber" id="form-upload">
 
     <h2 id="upload-form-title" class="text-center">Edit Form</h2>
-<form class="w3-container" id="form-upload-container" action='<?php echo base_url();?>index.php/upload/edit/' method='post'
+<form class="w3-container" id="form-upload-container" action='<?php echo base_url();?>index.php/news_controller/editSubmit/' method='post'
   enctype="multipart/form-data" onsubmit='return confirm("Apakah Anda yakin ingin mengubah Berita?")'>
 
   <div class="w3-group">
@@ -21,7 +21,9 @@
     <input name="tanggalBerita" type="date" value="<?php echo $row['Tanggal'];?>" class="w3-input" type="text" style="width:100%"  required>
     <label class="w3-label">Tanggal Berita</label>
   </div>
-
+  <div class="w3-group"> 
+    <input type="hidden" value="<?php echo $row['ID_News'];?>" name="id_news">
+  </div>
  <div class="w3-group"> 
     <textarea name="isiBerita" class="w3-input" type="text" style="width:100%" required>
         <?php echo $row['isi_berita'];?>
@@ -32,7 +34,7 @@
       <label class="w3-label">Picture</label>
       <br/>
       <div class="thumbnail" id="men-collection-col">
-        <img id = "img_edit" src="<?php echo base_url();?>uploads/<?php echo $row['foto_berita'];?>">
+        <img id = "img_edit" src="<?php echo base_url();?>foto_berita/<?php echo $row['foto_berita'];?>">
       </div>
     </div>
   </center>
