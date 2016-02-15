@@ -8,7 +8,7 @@
 <div class="w3-card-24 w3-amber" id="form-upload">
 
     <h2 id="upload-form-title" class="text-center">Edit Form</h2>
-<form class="w3-container" id="form-upload-container" action='<?php echo base_url();?>index.php/upload/edit/' method='post'
+<form class="w3-container" id="form-upload-container" action='<?php echo base_url();?>index.php/news_controller/editSubmit/' method='post'
   enctype="multipart/form-data" onsubmit='return confirm("Apakah Anda yakin ingin mengubah Berita?")'>
 
   <div class="w3-group">
