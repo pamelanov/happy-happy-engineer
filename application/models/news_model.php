@@ -18,7 +18,7 @@
   
   $query = $this->db->query("Select * from news where ID_News = '$id'");
   
-  return $query->result_array();
+  return $query->result();
   
   }
   

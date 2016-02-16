@@ -34,7 +34,7 @@
     <link href="<?php echo base_url("path/to/bootstrap/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="container">
+<!--<div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
             <?php $attributes = array("class" => "form-horizontal", "name" => "contactform");
@@ -91,6 +91,6 @@
             <?php echo $this->session->flashdata('msg'); ?>
         </div>
     </div>
-</div>
+</div>-->
 </body>
 </html>

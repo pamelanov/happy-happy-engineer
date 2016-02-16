@@ -66,7 +66,7 @@
       <div class="caption">
         <h3>Browse Girls Section</h3>
         <p>Explore our girl collection and get discounts for early buyers!</p>
-        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+        <p><a href="<?php echo base_url(); ?>/index.php/women_collection" class="btn btn-danger" role="button">Browse</a>
 
       </div>
     </div>
@@ -77,18 +77,18 @@
       <div class="caption">
         <h3>Browse Boys Section</h3>
         <p>Explore our boys collection and get discounts for early buyers!</p>
-        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+        <p><a href="<?php echo base_url(); ?>/index.php/men_collection" class="btn btn-danger" role="button">Browse</a>
 
       </div>
     </div>
   </div>
 	    <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="<?php echo base_url();?>pictures/H2E_4374.jpg" alt="boy section">
+      <img src="<?php echo base_url();?>pictures/H2E_4374.jpg" alt="all section">
       <div class="caption">
         <h3>Browse Boys Section</h3>
         <p>Explore our boys collection and get discounts for early buyers!</p>
-        <p><a href="#" class="btn btn-danger" role="button">Browse</a>
+        <p><a href="<?php echo base_url(); ?>/index.php/all_collections" class="btn btn-danger" role="button">Browse</a>
       </div>
     </div>
   </div>

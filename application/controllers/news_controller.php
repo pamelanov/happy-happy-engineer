@@ -156,6 +156,17 @@
   
 }
   
+  
+  function read($idnews){
+   $news = $this->news_model->getItemData($idnews);
+   
+   $data['berita'] = $news;
+   $data['judul'] = 'News';
+   $data['main'] = "news_read";
+   $this->load->view('template', $data);
+  }
+
 }
+
 
 ?>

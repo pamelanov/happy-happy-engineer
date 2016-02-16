@@ -33,12 +33,11 @@
 
 <!-- Begin Body -->
 <div class="container">
-	<div class="row">
-  	<div class="col col-sm-9">
+
+
   	  <?php
         $url = $this->uri->uri_string();
-        $no = $offset;
-        foreach($data as $row ) { 
+        foreach($berita as $row ) { 
       ?>
         <div class="panel">
           <h1 class="text-center"><div class="judul_news"><a href="#"><?php echo $row->judul_berita; ?></a></div></h1>
@@ -63,29 +62,11 @@
         </div>
 			<?php }?>
 
-    <div class="panel-footer" style="height:40px;">
-      <?php echo $halaman ?> <!--Memanggil variable pagination-->
-    </div>
-      </div>
+
+
 	
 			 
 
    
-			
 
-		
-    <div class="col col-sm-3">
-	  
-     	<div id="sidebar">
-    		<ul class="nav nav-stacked">
-          <li><h3 class="highlight"><div class="judul_news">Archives <i class="glyphicon glyphicon-dashboard pull-right"></i></div></h3></li>
-					<?php
-					 foreach($titles as $row ) { ?>
-				     <li><a href="<?php echo base_url(); ?>index.php/news_controller/read/<?php echo $row->ID_News; ?>" class="highlight-bk"><?php echo $row->judul_berita; ?></a></li>
-					 <?php } 
-          ?>
-				</ul>
-			</div>
-    </div>
-</div>
 	</div>

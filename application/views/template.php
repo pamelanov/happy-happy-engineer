@@ -156,7 +156,7 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
 		<i id="footer_media_em" class="glyphicon glyphicon-envelope w3-xxxlarge"></i>
 		<i id="footer_media_wa" class="fa fa-whatsapp w3-xxxlarge"></i>
 		<i id="footer_media_fb" class="fa fa-facebook-square w3-xxxlarge"></i>
-		<i id="footer_media_ins" class="fa fa-instagram w3-xxxlarge"></i>
+		<a href="http://instagram.com/happyhappyengineer"><i id="footer_media_ins" class="fa fa-instagram w3-xxxlarge"></i></a>
 		<i id="footer_media_tw" class="fa fa-twitter-square w3-xxxlarge"></i>
 		
 	</p>
